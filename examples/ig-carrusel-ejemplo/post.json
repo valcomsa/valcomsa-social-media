@@ -1,0 +1,27 @@
+{
+  "id": "ig-carrusel-ejemplo",
+  "network": "instagram",
+  "format": "carousel",
+  "publish_at": "2027-01-01T09:00:00-05:00",
+  "status": "draft",
+  "pillar": "convertir",
+  "campaign": "ejemplo",
+  "title": "",
+  "first_comment": "",
+  "slides": [
+    {"layout": "cover", "eyebrow": "Ransomware", "headline": "No es SI,\nes *CUÁNDO*.", "body": "El día del ataque no lo eliges. Recuperarte, sí."},
+    {"layout": "point", "number": "01", "title": "El ataque no avisa", "body": "Llega un viernes en la noche, cuando nadie mira los servidores."},
+    {"layout": "point", "number": "02", "title": "El costo no es técnico", "body": "Es operación detenida, clientes sin servicio y **reputación** en juego."},
+    {"layout": "list", "eyebrow": "Lo que sí controlas", "title": "Tres decisiones que se toman hoy", "items": ["Respaldos probados, no solo configurados", "Un plan de respuesta firmado por el directorio", "Recuperación con **garantía contractual**"]},
+    {"layout": "closing", "eyebrow": "VALCOM", "headline": "Si no recuperamos tus datos, *no pagas*.", "body": "Garantía contractual No Cure – No Pay.", "cta": "Agenda una evaluación"}
+  ],
+  "alt_text": [
+    "Portada sobre fondo azul noche: No es SI, es CUÁNDO. El día del ataque no lo eliges. Recuperarte, sí.",
+    "Punto 01: El ataque no avisa. Llega un viernes en la noche, cuando nadie mira los servidores.",
+    "Punto 02: El costo no es técnico. Es operación detenida, clientes sin servicio y reputación en juego.",
+    "Lista: tres decisiones que se toman hoy: respaldos probados, plan de respuesta firmado por el directorio y recuperación con garantía contractual.",
+    "Cierre: Si no recuperamos tus datos, no pagas. Garantía contractual No Cure – No Pay. Agenda una evaluación. Pregúntale a Valox."
+  ],
+  "sources": [],
+  "buffer": {"post_id": "", "scheduled_at": ""}
+}

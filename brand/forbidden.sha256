@@ -1,0 +1,5 @@
+# SHA-256 de términos que nunca pueden aparecer en contenido público (nombres de aliados y subcontratistas).
+# Se guardan como hash para no publicarlos en este repo. Agregar con: python3 scripts/check.py --add-forbidden "término"
+28a4f16e136cfdcd7aa71ae67738fb843fc47507520e65713ec0219b0b909c43
+5d922f4891f9e9153ef25933b113dcab7e73bd84ae0e05b82abdae7dfc2f58d7
+8daf8f96c00b22015c46c1d37ed12f45747086a7a3cfe01922170f3e4a81b5ce

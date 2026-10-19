@@ -1,0 +1,10 @@
+{
+  "repo": "valcomsa/valcomsa-social-media",
+  "organization": {"id": "6ad680179bd16f0b35f758ec", "name": "My organization"},
+  "timezone": "America/Guayaquil",
+  "channels": {
+    "linkedin": {"id": "6ad6810d778b240e2f5e52bd", "name": "Valcom S.A.", "type": "page"},
+    "instagram": {"id": "6ad68032778b240e2f5e4c6d", "name": "valcom.sa", "type": "business"}
+  },
+  "plan_limits": {"scheduled_posts": 10, "channels": 3}
+}
