@@ -40,7 +40,7 @@ Las URLs que recibe Buffer apuntan al commit (`raw.githubusercontent.com/valcoms
 ## Reglas que verifica `check.py`
 
 - Instagram: 1 a 10 imágenes, caption ≤ 2.200 caracteres, máximo 5 hashtags.
-- LinkedIn: caption ≤ 3.000 caracteres, máximo 3 hashtags, documento de 3 a 12 páginas recomendado.
+- LinkedIn: caption ≤ 3.000 caracteres, máximo 2 hashtags, documento de 3 a 12 páginas recomendado.
 - Toda slide con cifra lleva fuente; todo carrusel termina en slide de cierre con Valox; un texto alternativo por imagen.
 - El caption menciona a Valox. Avisa si hay montos (VALCOM no publica precios) o enlaces externos en LinkedIn.
 - Bloquea nombres de aliados y subcontratistas (guardados como hash en `brand/forbidden.sha256`; agregar con `python3 scripts/check.py --add-forbidden "nombre"`).

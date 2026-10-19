@@ -12,7 +12,7 @@ VALOX_URL = "https://lnkd.in/eNA2SkUj"
 
 RULES = {
     "instagram": {"caption_max": 2200, "hashtags_max": 5, "slides_max": 10, "hook": 125},
-    "linkedin": {"caption_max": 3000, "hashtags_max": 3, "slides_max": 20, "hook": 140},
+    "linkedin": {"caption_max": 3000, "hashtags_max": 2, "slides_max": 20, "hook": 140},
 }
 LAYOUTS = {"cover", "point", "stat", "list", "quote", "closing"}
 
