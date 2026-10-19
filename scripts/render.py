@@ -24,41 +24,40 @@ def rich(s):
     return s.replace("\n", "<br>")
 
 
-DIAG = """<svg class="diag{cls}" viewBox="0 0 540 400" preserveAspectRatio="xMaxYMin slice" aria-hidden="true">
-<rect class="f-gold" x="162" y="0" width="189" height="200"/><rect class="f-tint" x="351" y="0" width="189" height="140"/>
-<rect class="f-blue" x="162" y="200" width="189" height="200"/><rect class="f-blue2" x="351" y="140" width="189" height="260"/>
-<polygon class="f-ground" points="184,400 248,400 551,-24 487,-24"/><polygon class="f-ground" points="389,400 427,400 551,248 551,188"/></svg>"""
-
 CHECK = '<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#C9B497" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4 10-10"/></svg>'
 
 
+def head(i, n, kind):
+    """Logo oficial (archivo real, nunca redibujado) arriba a la izquierda; nada más en la cabecera."""
+    return f'<div class="head"><img class="logo" src="{BRAND}/logos/valcom-logo-horizontal.png" alt="VALCOM"></div>'
+
+
 def foot(i, n, kind):
-    logo = f'<img class="logo" src="{BRAND}/logos/valcom-logo-horizontal.png" alt="">'
-    iso = f'<img class="iso" src="{BRAND}/logos/valcom-isotipo.png" alt="">'
     if kind == "cover":
         right = '<div class="swipe">Desliza →</div>' if n > 1 else '<div class="meta">Pregúntale a Valox · IA en ciberseguridad 24/7</div>'
-        return f'<div class="foot">{logo}{right}</div>'
-    if kind == "closing":
-        return f'<div class="foot">{logo}<div class="web">www.valcomsa.com</div></div>'
-    return f'<div class="foot">{iso}<div class="page">{i:02d} / {n:02d}</div></div>'
+    elif kind == "closing":
+        right = '<div class="page"></div>'
+    else:
+        right = f'<div class="page">{i:02d} / {n:02d}</div>'
+    return f'<div class="foot"><div class="web">www.valcomsa.com</div>{right}</div>'
 
 
 def slide_html(s, i, n):
     lay = s.get("layout", "cover")
     if lay == "cover":
-        inner = DIAG.format(cls="") + f'''<div class="copy">
+        inner = f'''<div class="copy">
   {f'<div class="eyebrow">{esc(s.get("eyebrow"))}</div>' if s.get("eyebrow") else ''}
   <h1 class="headline">{rich(s.get("headline"))}</h1>
   {f'<p class="body">{rich(s.get("body"))}</p>' if s.get("body") else ''}
 </div>'''
     elif lay == "point":
-        inner = DIAG.format(cls=" small") + f'''<div class="copy">
+        inner = f'''<div class="copy">
   <div class="num">{esc(s.get("number") or f"{i-1:02d}")}</div>
   <h2 class="headline">{rich(s.get("title"))}</h2>
   <p class="body">{rich(s.get("body"))}</p>
 </div>'''
     elif lay == "stat":
-        inner = DIAG.format(cls=" small") + f'''<div class="copy">
+        inner = f'''<div class="copy">
   {f'<div class="eyebrow">{esc(s.get("eyebrow"))}</div>' if s.get("eyebrow") else ''}
   <div class="value">{esc(s.get("value"))}</div>
   <div class="label">{rich(s.get("label"))}</div>
@@ -66,17 +65,17 @@ def slide_html(s, i, n):
 </div>'''
     elif lay == "list":
         items = "".join(f"<li>{CHECK}<span>{rich(x)}</span></li>" for x in s.get("items", []))
-        inner = DIAG.format(cls=" small") + f'''<div class="copy">
+        inner = f'''<div class="copy">
   {f'<div class="eyebrow">{esc(s.get("eyebrow"))}</div>' if s.get("eyebrow") else ''}
   <h2 class="headline">{rich(s.get("title"))}</h2><ul>{items}</ul>
 </div>'''
     elif lay == "quote":
-        inner = DIAG.format(cls=" small") + f'''<div class="copy">
+        inner = f'''<div class="copy">
   <div class="mark">“</div><h2 class="headline">{rich(s.get("text"))}</h2>
   {f'<div class="who">{esc(s.get("author"))}</div>' if s.get("author") else ''}
 </div>'''
     elif lay == "closing":
-        inner = DIAG.format(cls=" small") + f'''<div class="copy">
+        inner = f'''<div class="copy">
   {f'<div class="eyebrow">{esc(s.get("eyebrow"))}</div>' if s.get("eyebrow") else ''}
   <h2 class="headline">{rich(s.get("headline"))}</h2>
   {f'<p class="body">{rich(s.get("body"))}</p>' if s.get("body") else ''}
@@ -88,7 +87,7 @@ def slide_html(s, i, n):
         raise SystemExit(f"Layout desconocido en slide {i}: {lay}")
     return f'''<!doctype html><html lang="es"><head><meta charset="utf-8">
 <link rel="stylesheet" href="{BRAND}/brand.css"></head>
-<body><div class="slide l-{lay}">{inner}{foot(i, n, lay)}</div></body></html>'''
+<body><div class="slide l-{lay}">{head(i, n, lay)}{inner}{foot(i, n, lay)}</div></body></html>'''
 
 
 def main():
@@ -115,7 +114,8 @@ def main():
             overflow = pg.evaluate("""() => [...document.querySelectorAll('.copy')].some(c => {
                 const r = c.getBoundingClientRect();
                 const lim = Math.min(...[...document.querySelectorAll('.foot, .valox')].map(e => e.getBoundingClientRect().top));
-                return r.bottom > lim - 24 || r.top < 150 || r.right > 1080 - 90; })""")
+                const hd = document.querySelector('.head').getBoundingClientRect();
+                return r.bottom > lim - 24 || r.top < hd.bottom + 24 || r.right > 1080 - 90; })""")
             dest = out / f"{i:02d}.png"
             pg.screenshot(path=str(dest), clip={"x": 0, "y": 0, "width": W, "height": H})
             paths.append(dest)

@@ -44,23 +44,21 @@ body { width: 1080px; height: 1350px; overflow: hidden; background: var(--surfac
 .body strong, .headline em { color: var(--accent-ink); font-style: normal; font-weight: inherit; }
 .rule { height: 2px; background: var(--accent); width: 120px; }
 
-/* Recurso diagonal (DiagonalBand) */
-.diag { position: absolute; right: 0; top: 0; width: 540px; height: 400px; }
-.diag .f-gold { fill: var(--gold-500); } .diag .f-tint { fill: var(--gold-300); }
-.diag .f-blue { fill: var(--blue-400); } .diag .f-blue2 { fill: var(--blue-600); }
-.diag .f-ground { fill: var(--surface); }
-.diag.small { width: 300px; height: 220px; }
+/* Cabecera: logo oficial sin modificar. El PNG trae ~45% de margen transparente: a 168px de alto
+   la marca visible mide ~93px (mínimo de marca 80–90px). Los márgenes negativos solo compensan ese aire.
+   Prohibido recrear el isotipo, sus franjas o sus formas como decoración. */
+.head { position: absolute; left: var(--safe); right: var(--safe); top: 64px; display: flex; align-items: center; }
+.head .logo { height: 168px; width: auto; display: block; margin: -37px 0 -37px -41px; }
 
 /* Pie */
-.foot { position: absolute; left: var(--safe); right: var(--safe); bottom: 72px; display: flex; align-items: flex-end; justify-content: space-between; gap: 32px; }
-.foot .logo { height: 96px; width: auto; display: block; }
-.foot .iso { height: 80px; width: auto; display: block; }
+.foot { position: absolute; left: var(--safe); right: var(--safe); bottom: 72px; padding-top: 24px; border-top: 1px solid var(--hairline); display: flex; align-items: center; justify-content: space-between; gap: 32px; }
 .foot .meta { font-size: 24px; line-height: 32px; color: var(--accent-ink); text-align: right; }
 .foot .page { font-size: 24px; color: var(--ink-muted); letter-spacing: .1em; }
 .swipe { font-size: 26px; font-weight: 600; color: var(--accent-ink); letter-spacing: .06em; }
 
 /* Layouts */
-.l-cover .copy { bottom: 300px; }
+.l-cover .copy { bottom: 220px; }
+.l-cover .eyebrow::before { content: ""; display: block; width: 120px; height: 2px; background: var(--accent); margin-bottom: 32px; }
 .l-cover .headline { font-size: 104px; line-height: 110px; margin-top: 28px; }
 .l-cover .body { margin-top: 36px; max-width: 860px; }
 
@@ -86,11 +84,11 @@ body { width: 1080px; height: 1350px; overflow: hidden; background: var(--surfac
 .l-quote .headline { font-size: 70px; line-height: 84px; font-weight: 600; margin-top: 30px; }
 .l-quote .who { margin-top: 44px; font-size: 30px; color: var(--accent-ink); font-weight: 600; }
 
-.l-closing .copy { top: 210px; }
+.l-closing .copy { top: 300px; }
 .l-closing .headline { font-size: 88px; line-height: 96px; margin-top: 28px; }
 .l-closing .body { margin-top: 32px; }
 .l-closing .cta { display: inline-block; margin-top: 48px; background: var(--accent); color: var(--on-accent); font-weight: 700; font-size: 34px; padding: 26px 44px; border-radius: 6px; }
-.valox { position: absolute; left: var(--safe); right: var(--safe); bottom: 250px; border-top: 2px solid var(--accent); padding-top: 28px; }
+.valox { position: absolute; left: var(--safe); right: var(--safe); bottom: 190px; border-top: 2px solid var(--accent); padding-top: 28px; }
 .valox .q { font-size: 32px; line-height: 42px; font-weight: 600; color: var(--ink); }
 .valox .a { font-size: 28px; line-height: 38px; color: var(--ink-muted); margin-top: 6px; }
 .valox .a b { color: var(--accent-ink); }
