@@ -24,7 +24,9 @@ def main():
     sha = git("rev-parse", "HEAD")
     if git("status", "--porcelain", "--", str(post.relative_to(ROOT))):
         raise SystemExit("Hay cambios sin commit en este post: commit + push primero.")
-    if git("rev-parse", "HEAD") != git("rev-parse", "@{u}"):
+    branch = git("rev-parse", "--abbrev-ref", "HEAD")
+    git("fetch", "-q", "origin", branch)
+    if subprocess.run(["git", "-C", str(ROOT), "merge-base", "--is-ancestor", sha, "FETCH_HEAD"]).returncode != 0:
         raise SystemExit("El commit local no está en GitHub: git push primero.")
     base = f"https://raw.githubusercontent.com/{CFG['repo']}/{sha}/"
     rel = post.relative_to(ROOT).as_posix()
