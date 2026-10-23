@@ -78,6 +78,8 @@ def main():
         E.append("Un carrusel o documento necesita al menos 3 slides")
     if n > r["slides_max"]:
         E.append(f"{net} vía Buffer admite máximo {r['slides_max']} imágenes; hay {n}")
+    if net == "instagram" and fmt == "carousel" and 4 <= n <= 7:
+        W.append(f"Carrusel de {n} slides: el engagement cae entre 4 y 7 (Socialinsider). Recorta a 3 o desarrolla hasta 8–10")
     if fmt == "document" and n > 12:
         W.append("Documento de más de 12 páginas: la lectura cae después de ~10")
     for i, s in enumerate(slides, 1):
