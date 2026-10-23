@@ -100,7 +100,9 @@ def main():
                 need = 1080 if (img.get("mode") or "full") == "full" else 888
                 if w < need:
                     W.append(f"slide {i}: la imagen mide {w}x{h}; para nitidez conviene ≥ {need} px de ancho")
-            if not img.get("rights"):
+            if str(img.get("rights", "")).upper().startswith("PENDIENTE"):
+                E.append(f"slide {i}: derechos de la imagen sin confirmar ({img.get('file')}): no se publica hasta saber si es propia o tiene licencia comercial")
+            elif not img.get("rights"):
                 W.append(f"slide {i}: falta 'rights' en la imagen (propia, licenciada o banco con licencia comercial)")
     if n > 1 and slides[-1].get("layout") != "closing":
         E.append("La última slide de un carrusel/documento debe ser 'closing' (cierre con Valox)")
