@@ -1,0 +1,89 @@
+{
+  "id": "2026-10-23_php2shell-li",
+  "network": "linkedin",
+  "format": "document",
+  "publish_at": "2026-10-23T23:59:00-05:00",
+  "status": "ready",
+  "pillar": "despertar",
+  "campaign": "noticias-ciber",
+  "title": "PHP2Shell: 14 años de falla y 4 días de ventaja",
+  "first_comment": "",
+  "slides": [
+    {
+      "layout": "cover",
+      "eyebrow": "Alerta · PHP2Shell",
+      "headline": "Una falla de\n*14 años*.",
+      "body": "Los atacantes la probaron 4 días antes del parche.",
+      "image": {
+        "file": "images/01-portada.jpg",
+        "mode": "full",
+        "rights": "aportada por la gerencia de VALCOM; origen y licencia no confirmados (publicación autorizada por el CEO bajo su responsabilidad)",
+        "position": "62% 50%",
+        "brief": "Foto real de código en pantalla, luz fría, vertical ≥1080×1350"
+      }
+    },
+    {
+      "layout": "stat",
+      "eyebrow": "Exposición",
+      "value": "79%",
+      "label": "de los servicios PHP en internet usa versiones **sin soporte**.",
+      "source": "Modat, 20 oct 2026",
+      "image": {
+        "file": "images/02-exposicion.jpg",
+        "mode": "band",
+        "rights": "aportada por la gerencia de VALCOM; origen y licencia no confirmados (publicación autorizada por el CEO bajo su responsabilidad)",
+        "position": "50% 45%",
+        "brief": "Pantalla con sitio de PHP, horizontal ≥1600×800"
+      }
+    },
+    {
+      "layout": "point",
+      "number": "01",
+      "title": "El parche no se instala solo",
+      "body": "Si nadie sabe qué versión de PHP corre en cada servidor, el inventario ya es el primer incidente."
+    },
+    {
+      "layout": "point",
+      "number": "02",
+      "title": "La factura llega igual",
+      "body": "Extorsión, sanciones de la LOPDP y **reputación**: no distinguen entre un atacante hábil y una empresa distraída."
+    },
+    {
+      "layout": "list",
+      "eyebrow": "Lo que revisamos",
+      "title": "Una evaluación, cuatro respuestas",
+      "items": [
+        "Versiones expuestas y sin soporte",
+        "Accesos y claves que hay que rotar",
+        "Respaldos que **sí restauran**",
+        "Evidencia de debida diligencia"
+      ]
+    },
+    {
+      "layout": "closing",
+      "eyebrow": "VALCOM · Resiliencia digital",
+      "headline": "No adivines.\n*Evalúa.*",
+      "body": "Menos sorpresas, menos parches de emergencia y un directorio que duerme tranquilo.",
+      "cta": "Agenda una evaluación"
+    }
+  ],
+  "alt_text": [
+    "Portada sobre foto de código en pantalla: Alerta PHP2Shell. Una falla de 14 años. Los atacantes la probaron 4 días antes del parche.",
+    "Foto de una laptop con el sitio de PHP. Cifra: 79% de los servicios PHP en internet usa versiones sin soporte. Fuente: Modat, 20 de octubre de 2026.",
+    "Punto 01: El parche no se instala solo. Si nadie sabe qué versión de PHP corre en cada servidor, el inventario ya es el primer incidente.",
+    "Punto 02: La factura llega igual. Extorsión, sanciones de la LOPDP y reputación no distinguen entre un atacante hábil y una empresa distraída.",
+    "Lista: lo que revisamos. Versiones expuestas y sin soporte, accesos y claves a rotar, respaldos que sí restauran y evidencia de debida diligencia.",
+    "Cierre VALCOM, resiliencia digital: No adivines, evalúa. Agenda una evaluación. Pregúntale a Valox."
+  ],
+  "sources": [
+    "https://www.tenable.com/blog/php2shell-cve-2026-109618-cve-2026-109619-frequently-asked-questions-about-critical-php-remote",
+    "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-identifies-php2shell-exploitation-prior-to-public-disclosure-in-madpot/",
+    "https://www.recordedfuture.com/blog/php2shell-vulnerability-exploitation",
+    "https://thehackernews.com/2026/10/someone-tried-to-exploit-php2shell-4.html",
+    "https://www.tanium.com/blog/php2shell-responding-to-cve-2026-109618-and-cve-2026-109619"
+  ],
+  "buffer": {
+    "post_id": "",
+    "scheduled_at": ""
+  }
+}
