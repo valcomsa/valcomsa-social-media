@@ -30,14 +30,17 @@ def main():
         raise SystemExit("El commit local no está en GitHub: git push primero.")
     base = f"https://raw.githubusercontent.com/{CFG['repo']}/{sha}/"
     rel = post.relative_to(ROOT).as_posix()
-    pngs = sorted((post / "slides").glob("*.png"))
+    pngs = sorted((post / "slides").glob("*.png")) if (post / "slides").exists() else []
     net = spec["network"]
     args = {"channelId": CFG["channels"][net]["id"], "schedulingType": "automatic", "mode": mode, "text": caption}
     if mode == "customScheduled":
         args["dueAt"] = spec["publish_at"]
     if "--draft" in sys.argv:
         args["saveToDraft"] = True
-    if net == "linkedin" and spec["format"] == "document":
+    if spec["format"] == "reel":
+        args["assets"] = [{"video": {"url": base + rel + "/reel.mp4",
+                                     "metadata": {"thumbnailOffset": int(1000 * float(spec.get("cover_time", 0.5)))}}}]
+    elif net == "linkedin" and spec["format"] == "document":
         args["assets"] = [{"document": {"url": base + rel + "/document.pdf", "title": spec.get("title") or spec["id"],
                                         "thumbnailUrl": base + rel + "/slides/01.png"}}]
     else:
@@ -45,7 +48,7 @@ def main():
                           for p, alt in zip(pngs, spec["alt_text"])]
     md = {}
     if net == "instagram":
-        md["instagram"] = {"type": "post", "shouldShareToFeed": True}
+        md["instagram"] = {"type": "reel" if spec["format"] == "reel" else "post", "shouldShareToFeed": True}
         if spec.get("first_comment"):
             md["instagram"]["firstComment"] = spec["first_comment"]
     elif spec.get("first_comment"):
@@ -53,7 +56,7 @@ def main():
     if md:
         args["metadata"] = md
     print(json.dumps(args, ensure_ascii=False, indent=2))
-    urls = [a.get("image", a.get("document", {})).get("url") for a in args["assets"]]
+    urls = [(a.get("image") or a.get("video") or a.get("document") or {}).get("url") for a in args["assets"]]
     if net == "linkedin" and spec["format"] == "document":
         urls.append(args["assets"][0]["document"]["thumbnailUrl"])
     print("\n# Verificar antes de llamar a Buffer:", file=sys.stderr)

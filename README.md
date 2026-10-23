@@ -20,6 +20,7 @@ Cada carpeta de post contiene:
 | `caption.md` | el copy exacto que se publica |
 | `slides/01.png …` | imágenes 1080×1350 (4:5) generadas por `render.py` |
 | `document.pdf` | solo LinkedIn formato `document`: las slides en un PDF |
+| `reel.html` · `reel.mp4` · `cover.jpg` | solo formato `reel`: animación (motor `brand/reel.js`), video 1080×1920 y portada, generados por `render_reel.py` |
 
 Estados en `post.json`: `draft` → `ready` (pasó `check.py`) → `scheduled` (está en Buffer, con `buffer.post_id`) → `published`.
 

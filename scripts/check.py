@@ -50,7 +50,8 @@ def main():
     caption = (post / "caption.md").read_text(encoding="utf-8").strip() if (post / "caption.md").exists() else ""
     E, W = [], []
 
-    for k in ("id", "network", "format", "publish_at", "status", "slides", "alt_text"):
+    reel = spec.get("format") == "reel"
+    for k in (("id", "network", "format", "publish_at", "status", "alt_text") if reel else ("id", "network", "format", "publish_at", "status", "slides", "alt_text")):
         if k not in spec:
             E.append(f"post.json sin campo '{k}'")
     net = spec.get("network")
@@ -58,12 +59,15 @@ def main():
         raise SystemExit(f"network debe ser instagram o linkedin, no {net!r}")
     r = RULES[net]
     fmt = spec.get("format")
-    ok_fmt = {"instagram": {"single", "carousel"}, "linkedin": {"single", "carousel", "document"}}[net]
+    ok_fmt = {"instagram": {"single", "carousel", "reel"}, "linkedin": {"single", "carousel", "document"}}[net]
     if fmt not in ok_fmt:
         E.append(f"format '{fmt}' no válido para {net}: {sorted(ok_fmt)}")
     if spec.get("id") != post.name:
         E.append(f"id ({spec.get('id')}) debe ser igual al nombre de la carpeta ({post.name})")
 
+    if reel:
+        check_reel(post, spec, caption, E, W)
+        return finish(post, spec, caption, r, net, E, W)
     slides = spec.get("slides", [])
     n = len(slides)
     if n == 0:
@@ -89,6 +93,42 @@ def main():
     if len(alts) != n or any(not a.strip() for a in alts):
         E.append(f"alt_text debe tener un texto por slide ({n}); tiene {len(alts)}")
 
+    return finish(post, spec, caption, r, net, E, W)
+
+
+def check_reel(post, spec, caption, E, W):
+    import subprocess
+    mp4 = post / "reel.mp4"
+    if not (post / "reel.html").exists():
+        E.append("Falta reel.html")
+    if not mp4.exists():
+        E.append("Falta reel.mp4: corre scripts/render_reel.py")
+        return
+    if not (post / "cover.jpg").exists():
+        E.append("Falta cover.jpg: corre scripts/render_reel.py")
+    out = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries",
+                          "stream=width,height,codec_name,r_frame_rate:format=duration", "-of", "json", str(mp4)],
+                         capture_output=True, text=True)
+    info = json.loads(out.stdout or "{}")
+    st = (info.get("streams") or [{}])[0]
+    dur = float(info.get("format", {}).get("duration", 0))
+    if (st.get("width"), st.get("height")) != (1080, 1920):
+        E.append(f"reel.mp4 mide {st.get('width')}x{st.get('height')}; debe ser 1080x1920")
+    if st.get("codec_name") != "h264":
+        E.append("reel.mp4 debe ser H.264")
+    if not 3 <= dur <= 90:
+        E.append(f"Duración {dur:.1f}s: un Reel vía Buffer debe durar entre 3 y 90 s")
+    elif dur > 45:
+        W.append(f"Duración {dur:.1f}s: para motion sin voz conviene 15–35 s")
+    if mp4.stat().st_size > 100 * 1024 * 1024:
+        E.append("reel.mp4 pesa más de 100 MB (límite de GitHub)")
+    if len(spec.get("alt_text", [])) != 1:
+        E.append("alt_text de un reel: una sola descripción del video")
+    if not spec.get("sources"):
+        E.append("Un reel con datos debe listar sus fuentes en post.json.sources")
+
+
+def finish(post, spec, caption, r, net, E, W):
     if not caption:
         E.append("Falta caption.md")
     if len(caption) > r["caption_max"]:
@@ -122,6 +162,10 @@ def main():
     except ValueError:
         E.append("publish_at no es ISO 8601")
 
+    if spec.get("format") == "reel":
+        return report(post, E, W)
+    n = len(spec.get("slides", []))
+    fmt = spec.get("format")
     pngs = sorted((post / "slides").glob("*.png")) if (post / "slides").exists() else []
     if len(pngs) != n:
         E.append(f"Hay {len(pngs)} PNG en slides/ y {n} slides en post.json: corre scripts/render.py")
@@ -135,7 +179,10 @@ def main():
                 E.append(f"{p.name} pesa más de 8 MB")
     if fmt == "document" and not (post / "document.pdf").exists():
         E.append("Falta document.pdf: corre scripts/render.py")
+    return report(post, E, W)
 
+
+def report(post, E, W):
     for w in W:
         print("AVISO  ", w)
     for e in E:
