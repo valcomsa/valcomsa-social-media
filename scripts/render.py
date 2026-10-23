@@ -5,6 +5,10 @@ Uso:  python3 scripts/render.py posts/2026/10/2026-10-21_slug
 Requiere: pip install playwright pillow && python3 -m playwright install chromium
 
 Marcado en textos: *texto* en headline -> dorado; **texto** en body -> dorado.
+
+Imágenes: cualquier slide acepta "image": {"file": "images/x.jpg", "mode": "full"|"band", "brief": "..."}.
+  full = foto a sangre detrás del texto (cover, quote, closing); band = franja de foto bajo el logo (stat, point, list).
+  Si el archivo no existe se dibuja un marcador "IMAGEN PENDIENTE" con el brief, y check.py bloquea la publicación.
 """
 import html, json, re, sys, pathlib, tempfile
 
@@ -40,6 +44,24 @@ def foot(i, n, kind):
     else:
         right = f'<div class="page">{i:02d} / {n:02d}</div>'
     return f'<div class="foot"><div class="web">www.valcomsa.com</div>{right}</div>'
+
+
+POST_DIR = None
+
+
+def image_html(s):
+    img = s.get("image")
+    if not img:
+        return "", ""
+    mode = img.get("mode") or ("full" if s.get("layout") in ("cover", "quote", "closing") else "band")
+    f = (POST_DIR / img.get("file", "")) if img.get("file") else None
+    if f and f.exists():
+        pos = esc(img.get("position", "50% 50%"))
+        tag = f'<div class="ph ph-{mode}"><img src="{f.as_uri()}" style="object-position:{pos}" alt=""></div>'
+    else:
+        tag = (f'<div class="ph ph-{mode} ph-missing"><div class="ph-msg"><b>IMAGEN PENDIENTE</b>'
+               f'<span>{esc(img.get("brief", ""))}</span><i>{esc(img.get("file", ""))}</i></div></div>')
+    return tag, f" has-{mode}"
 
 
 def slide_html(s, i, n):
@@ -85,15 +107,18 @@ def slide_html(s, i, n):
 <div class="a">Pregúntale a <b>Valox</b>, nuestro agente de IA en ciberseguridad, disponible 24/7.</div></div>'''
     else:
         raise SystemExit(f"Layout desconocido en slide {i}: {lay}")
+    ph, cls = image_html(s)
     return f'''<!doctype html><html lang="es"><head><meta charset="utf-8">
 <link rel="stylesheet" href="{BRAND}/brand.css"></head>
-<body><div class="slide l-{lay}">{head(i, n, lay)}{inner}{foot(i, n, lay)}</div></body></html>'''
+<body><div class="slide l-{lay}{cls}">{ph}{head(i, n, lay)}{inner}{foot(i, n, lay)}</div></body></html>'''
 
 
 def main():
     if len(sys.argv) < 2:
         raise SystemExit(__doc__)
+    global POST_DIR
     post_dir = pathlib.Path(sys.argv[1]).resolve()
+    POST_DIR = post_dir
     spec = json.loads((post_dir / "post.json").read_text(encoding="utf-8"))
     slides = spec["slides"]
     out = post_dir / "slides"
@@ -119,7 +144,11 @@ def main():
             dest = out / f"{i:02d}.png"
             pg.screenshot(path=str(dest), clip={"x": 0, "y": 0, "width": W, "height": H})
             paths.append(dest)
-            print(f"slide {i:02d} ({s.get('layout')}) -> {dest.relative_to(ROOT)}" + ("  ⚠ TEXTO DEMASIADO LARGO: se monta sobre el pie" if overflow else ""))
+            img = s.get("image") or {}
+            missing = img and not (img.get("file") and (post_dir / img["file"]).exists())
+            print(f"slide {i:02d} ({s.get('layout')}) -> {dest.relative_to(ROOT) if dest.is_relative_to(ROOT) else dest}"
+                  + ("  ⚠ TEXTO DEMASIADO LARGO: se monta sobre el pie" if overflow else "")
+                  + (f"  ⚠ IMAGEN PENDIENTE: {img.get('file')} — pedírsela al usuario" if missing else ""))
         b.close()
     if spec.get("network") == "linkedin" and spec.get("format") == "document":
         from PIL import Image

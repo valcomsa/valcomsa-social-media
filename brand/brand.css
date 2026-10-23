@@ -93,3 +93,26 @@ body { width: 1080px; height: 1350px; overflow: hidden; background: var(--surfac
 .valox .a { font-size: 28px; line-height: 38px; color: var(--ink-muted); margin-top: 6px; }
 .valox .a b { color: var(--accent-ink); }
 .web { font-size: 26px; color: var(--ink-muted); letter-spacing: .04em; }
+
+/* Imágenes (fotos reales provistas por VALCOM). Tratamiento de marca: color bajado hacia navy y degradado
+   midnight para que el texto siempre lea sobre fondo oscuro. Nunca sobre el logo: la cabecera queda limpia. */
+.ph { position: absolute; left: 0; right: 0; overflow: hidden; background: var(--surface-raised); }
+.ph img { width: 100%; height: 100%; object-fit: cover; display: block; filter: grayscale(.35) saturate(.85) brightness(.82) contrast(1.05); }
+.ph::after { content: ""; position: absolute; inset: 0; background: rgba(6, 22, 53, .28); mix-blend-mode: multiply; }
+.ph-full { top: 0; bottom: 0; }
+.ph-full::before { content: ""; position: absolute; inset: 0; z-index: 1;
+  background: linear-gradient(180deg, rgba(27,30,47,.85) 0%, rgba(27,30,47,0) 22%, rgba(27,30,47,0) 38%, rgba(27,30,47,.88) 62%, var(--midnight) 82%); }
+.ph-band { top: 220px; height: 420px; left: var(--safe); right: var(--safe); border-radius: 6px; }
+.ph-band::before { content: ""; position: absolute; inset: 0; z-index: 1; box-shadow: inset 0 0 0 1px rgba(201,180,151,.25); border-radius: 6px; }
+.ph-missing { background: repeating-linear-gradient(135deg, #22263A 0 22px, #1E2234 22px 44px); border: 3px dashed var(--gold-500); display: flex; align-items: center; justify-content: center; }
+.ph-missing::after, .ph-missing::before { display: none; }
+.ph-full.ph-missing { border-width: 0; }
+.ph-msg { max-width: 760px; text-align: center; display: flex; flex-direction: column; gap: 14px; padding: 24px; }
+.ph-full .ph-msg { margin-top: -340px; }
+.ph-msg b { font-size: 30px; letter-spacing: .16em; color: var(--gold-300); }
+.ph-msg span { font-size: 28px; line-height: 38px; color: var(--white); }
+.ph-msg i { font-size: 22px; font-style: normal; color: var(--ink-muted); }
+.slide > .head, .slide > .copy, .slide > .foot, .slide > .valox { z-index: 2; }
+/* Con franja de foto, el texto baja y deja de centrarse */
+.has-band .copy { top: 690px !important; transform: none !important; }
+.l-stat.has-band .value { font-size: 180px; }

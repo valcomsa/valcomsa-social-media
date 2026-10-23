@@ -87,6 +87,21 @@ def main():
             E.append(f"slide {i}: layout '{s.get('layout')}' no existe ({sorted(LAYOUTS)})")
         if s.get("layout") == "stat" and not s.get("source"):
             E.append(f"slide {i}: una cifra sin fuente no se publica")
+        img = s.get("image")
+        if img and s.get("layout") == "closing":
+            E.append(f"slide {i}: el cierre no lleva imagen (compite con el CTA y Valox)")
+        if img:
+            f = post / img.get("file", "") if img.get("file") else None
+            if not f or not f.exists():
+                E.append(f"slide {i}: IMAGEN PENDIENTE ({img.get('file')}). Pídesela al usuario con este brief: {img.get('brief', '(sin brief)')}")
+            else:
+                from PIL import Image as _I
+                w, h = _I.open(f).size
+                need = 1080 if (img.get("mode") or "full") == "full" else 888
+                if w < need:
+                    W.append(f"slide {i}: la imagen mide {w}x{h}; para nitidez conviene ≥ {need} px de ancho")
+            if not img.get("rights"):
+                W.append(f"slide {i}: falta 'rights' en la imagen (propia, licenciada o banco con licencia comercial)")
     if n > 1 and slides[-1].get("layout") != "closing":
         E.append("La última slide de un carrusel/documento debe ser 'closing' (cierre con Valox)")
     if n and slides[0].get("layout") not in ("cover", "stat", "quote"):
