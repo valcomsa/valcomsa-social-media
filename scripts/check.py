@@ -12,7 +12,7 @@ VALOX_URL = "https://lnkd.in/eNA2SkUj"
 
 RULES = {
     "instagram": {"caption_max": 2200, "hashtags_max": 5, "slides_max": 10, "hook": 125},
-    "linkedin": {"caption_max": 3000, "hashtags_max": 2, "slides_max": 20, "hook": 140},
+    "linkedin": {"caption_max": 3000, "hashtags_max": 3, "slides_max": 20, "hook": 140},
 }
 LAYOUTS = {"cover", "point", "stat", "list", "quote", "closing"}
 
@@ -80,8 +80,10 @@ def main():
         E.append(f"{net} vía Buffer admite máximo {r['slides_max']} imágenes; hay {n}")
     if net == "instagram" and fmt == "carousel" and 4 <= n <= 7:
         W.append(f"Carrusel de {n} slides: el engagement cae entre 4 y 7 (Socialinsider). Recorta a 3 o desarrolla hasta 8–10")
-    if fmt == "document" and n > 12:
-        W.append("Documento de más de 12 páginas: la lectura cae después de ~10")
+    if net == "linkedin" and fmt == "document" and n < 5:
+        W.append(f"Documento de {n} páginas: por debajo de 5 rinde como una imagen; usa format single o desarrolla hasta 8–10")
+    if net == "linkedin" and fmt == "document" and n > 12:
+        W.append(f"Documento de {n} páginas: la lectura cae después de ~12; recorta a 8–10")
     for i, s in enumerate(slides, 1):
         if s.get("layout") not in LAYOUTS:
             E.append(f"slide {i}: layout '{s.get('layout')}' no existe ({sorted(LAYOUTS)})")
@@ -164,6 +166,8 @@ def finish(post, spec, caption, r, net, E, W):
         W.append(f"La primera línea tiene {len(first)} caracteres; se corta en ~{r['hook']}. El gancho debe caber antes del 'más'")
     if net == "linkedin" and re.search(r"https?://", caption.replace(VALOX_URL, "")):
         W.append("Enlace externo en el caption de LinkedIn: reduce el alcance. Mejor en un comentario o sin enlace")
+    if net == "linkedin" and len(caption) > 1600:
+        W.append(f"Texto de {len(caption)} caracteres: para LinkedIn VALCOM apunta a 800–1.300 (poco texto, mucho impacto)")
     if re.search(r"(US)?\$\s?\d|\bUSD\s?\d", caption):
         W.append("Aparecen montos: VALCOM no publica precios (primero evalúa, después cotiza)")
 
