@@ -2,8 +2,8 @@
   "id": "2026-10-23_php2shell-li",
   "network": "linkedin",
   "format": "document",
-  "publish_at": "2026-10-23T23:59:00-05:00",
-  "status": "ready",
+  "publish_at": "2026-10-23T18:19:39-05:00",
+  "status": "published",
   "pillar": "despertar",
   "campaign": "noticias-ciber",
   "title": "PHP2Shell: 14 años de falla y 4 días de ventaja",
@@ -83,7 +83,9 @@
     "https://www.tanium.com/blog/php2shell-responding-to-cve-2026-109618-and-cve-2026-109619"
   ],
   "buffer": {
-    "post_id": "",
-    "scheduled_at": ""
+    "post_id": "6adbeb8b3d5b27036b5796b8",
+    "mode": "shareNow",
+    "sent_at": "2026-10-23T23:19:39Z",
+    "linkedin_document": "urn:li:document:D4E10AQEJvkL7il2DfQ"
   }
 }
