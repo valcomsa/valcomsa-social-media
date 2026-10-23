@@ -2,8 +2,8 @@
   "id": "2026-10-26_php2shell-carrusel-ig",
   "network": "instagram",
   "format": "carousel",
-  "publish_at": "2026-10-26T12:30:00-05:00",
-  "status": "ready",
+  "publish_at": "2026-10-23T17:57:04-05:00",
+  "status": "published",
   "pillar": "despertar",
   "campaign": "noticias-ciber",
   "title": "PHP2Shell: una falla de 14 años",
@@ -57,7 +57,8 @@
     "https://www.tanium.com/blog/php2shell-responding-to-cve-2026-109618-and-cve-2026-109619"
   ],
   "buffer": {
-    "post_id": "",
-    "scheduled_at": ""
+    "post_id": "6adbe6409acae620d81ffe2b",
+    "mode": "shareNow",
+    "sent_at": "2026-10-23T22:57:04Z"
   }
 }
