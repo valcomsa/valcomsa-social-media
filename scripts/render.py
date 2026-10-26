@@ -158,7 +158,7 @@ def main():
         imgs = [Image.open(x).convert("RGB") for x in paths]
         pdf = post_dir / "document.pdf"
         imgs[0].save(pdf, save_all=True, append_images=imgs[1:], resolution=144)
-        print(f"PDF -> {pdf.relative_to(ROOT)}")
+        print(f"PDF -> {pdf.relative_to(ROOT) if pdf.is_relative_to(ROOT) else pdf}")
 
 
 if __name__ == "__main__":
