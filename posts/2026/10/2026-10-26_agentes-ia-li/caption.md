@@ -1,4 +1,4 @@
-Un atacante le dio una orden a una IA y se fue. Ella siguió sola buscando víctimas.
+Un atacante le dio una orden a una IA y se desconectó. Ella siguió sola buscando víctimas.
 
 Según Unit 42 (Palo Alto Networks), conectó DeepSeek, un modelo de IA, a Hermes, un agente de código abierto que ejecuta comandos por su cuenta. Lo dirigía por Telegram, sin pedirle confirmación, y el agente encontró más de 647.000 instancias expuestas de n8n, una herramienta de automatización.
 
