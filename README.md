@@ -42,8 +42,8 @@ Las URLs que recibe Buffer apuntan al commit (`raw.githubusercontent.com/valcoms
 
 - Instagram: 1 a 10 imágenes, caption ≤ 2.200 caracteres, máximo 5 hashtags.
 - LinkedIn: caption ≤ 3.000 caracteres, máximo 3 hashtags, documento de 5 a 12 páginas recomendado.
-- Toda slide con cifra lleva fuente; todo carrusel termina en slide de cierre con Valox; un texto alternativo por imagen.
-- El caption menciona a Valox. Avisa si hay montos (VALCOM no publica precios) o enlaces externos en LinkedIn.
+- Toda slide con cifra lleva fuente; todo carrusel termina en slide de cierre; un texto alternativo por imagen.
+- Valox es opcional: solo se incluye cuando el post lleva `"valox": true` (y en la slide de cierre). Avisa si hay montos (VALCOM no publica precios) o enlaces externos en LinkedIn.
 - Bloquea nombres de aliados y subcontratistas (guardados como hash en `brand/forbidden.sha256`; agregar con `python3 scripts/check.py --add-forbidden "nombre"`).
 
 Fuentes: Inter y Playfair Display, licencia SIL Open Font License (`brand/fonts/OFL-*.txt`). Logos © VALCOM S.A., uso exclusivo de la marca.

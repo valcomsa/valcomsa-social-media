@@ -91,7 +91,7 @@ def main():
             E.append(f"slide {i}: una cifra sin fuente no se publica")
         img = s.get("image")
         if img and s.get("layout") == "closing":
-            E.append(f"slide {i}: el cierre no lleva imagen (compite con el CTA y Valox)")
+            E.append(f"slide {i}: el cierre no lleva imagen (compite con el CTA)")
         if img:
             f = post / img.get("file", "") if img.get("file") else None
             if not f or not f.exists():
@@ -107,7 +107,7 @@ def main():
             elif not img.get("rights"):
                 W.append(f"slide {i}: falta 'rights' en la imagen (propia, licenciada o banco con licencia comercial)")
     if n > 1 and slides[-1].get("layout") != "closing":
-        E.append("La última slide de un carrusel/documento debe ser 'closing' (cierre con Valox)")
+        E.append("La última slide de un carrusel/documento debe ser 'closing'")
     if n and slides[0].get("layout") not in ("cover", "stat", "quote"):
         W.append("La primera slide debería ser cover, stat o quote: es el gancho")
     alts = spec.get("alt_text", [])
@@ -157,9 +157,11 @@ def finish(post, spec, caption, r, net, E, W):
     tags = re.findall(r"(?<!\w)#\w+", caption)
     if len(tags) > r["hashtags_max"]:
         E.append(f"{len(tags)} hashtags; máximo {r['hashtags_max']} en {net}")
-    if "valox" not in caption.lower():
-        E.append("El caption debe cerrar con la mención a Valox")
-    if net == "instagram" and VALOX_URL not in caption:
+    # Valox es opcional: solo se exige y se valida cuando el post declara "valox": true
+    wants_valox = bool(spec.get("valox")) or "valox" in caption.lower()
+    if spec.get("valox") and "valox" not in caption.lower():
+        E.append('post.json tiene "valox": true pero el caption no menciona a Valox')
+    if net == "instagram" and wants_valox and VALOX_URL not in caption:
         W.append("El cierre de Valox en Instagram lleva el enlace " + VALOX_URL + " (no es clicable en el caption; también va en la bio)")
     first = caption.split("\n", 1)[0]
     if len(first) > r["hook"]:

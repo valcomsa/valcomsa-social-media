@@ -38,7 +38,7 @@ def head(i, n, kind):
 
 def foot(i, n, kind):
     if kind == "cover":
-        right = '<div class="swipe">Desliza →</div>' if n > 1 else '<div class="meta">Pregúntale a Valox · IA en ciberseguridad 24/7</div>'
+        right = '<div class="swipe">Desliza →</div>' if n > 1 else '<div class="meta"></div>'
     elif kind == "closing":
         right = '<div class="page"></div>'
     else:
@@ -47,6 +47,10 @@ def foot(i, n, kind):
 
 
 POST_DIR = None
+
+# Valox es opcional: solo aparece si la slide de cierre lleva "valox": true en post.json
+VALOX_BLOCK = '''<div class="valox"><div class="q">¿Tienes dudas sobre la seguridad de tu empresa?</div>
+<div class="a">Pregúntale a <b>Valox</b>, nuestro agente de IA en ciberseguridad, disponible 24/7.</div></div>'''
 
 
 def image_html(s):
@@ -103,8 +107,7 @@ def slide_html(s, i, n):
   {f'<p class="body">{rich(s.get("body"))}</p>' if s.get("body") else ''}
   {f'<div class="cta">{esc(s.get("cta"))}</div>' if s.get("cta") else ''}
 </div>
-<div class="valox"><div class="q">¿Tienes dudas sobre la seguridad de tu empresa?</div>
-<div class="a">Pregúntale a <b>Valox</b>, nuestro agente de IA en ciberseguridad, disponible 24/7.</div></div>'''
+{VALOX_BLOCK if s.get("valox") else ""}'''
     else:
         raise SystemExit(f"Layout desconocido en slide {i}: {lay}")
     ph, cls = image_html(s)
