@@ -1,6 +1,6 @@
 {
   "network": "linkedin",
-  "status": "ready",
+  "status": "published",
   "pillar": "despertar",
   "campaign": "noticias-ciber",
   "title": "Tu próximo atacante delega: agentes de IA",
@@ -11,7 +11,7 @@
   ],
   "id": "2026-10-26_agentes-ia-li",
   "format": "document",
-  "publish_at": "2026-10-26T23:59:00-05:00",
+  "publish_at": "2026-10-26T17:01:13-05:00",
   "slides": [
     {
       "layout": "cover",
@@ -78,5 +78,10 @@
     "Punto 03: Tu respaldo también es puerta. En Taiwán se advirtió que los agentes de IA usan sistemas secundarios, como respaldo y pruebas, de escalón.",
     "Lista: lo que revisamos. APIs y servicios sin autenticación, parches críticos con plazos cortos, respaldos y pruebas aislados, automatizaciones con mínimos privilegios.",
     "Cierre VALCOM, resiliencia digital: Encuéntrate antes que ellos. Agenda una evaluación."
-  ]
+  ],
+  "buffer": {
+    "post_id": "6adfcda9c26d8b40cc791673",
+    "mode": "shareNow",
+    "sent_at": "2026-10-26T22:01:13Z"
+  }
 }

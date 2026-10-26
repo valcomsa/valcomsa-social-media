@@ -1,6 +1,6 @@
 {
   "network": "instagram",
-  "status": "ready",
+  "status": "published",
   "pillar": "despertar",
   "campaign": "noticias-ciber",
   "title": "Agentes de IA atacan solos",
@@ -11,7 +11,7 @@
   ],
   "id": "2026-10-26_agentes-ia-ig",
   "format": "carousel",
-  "publish_at": "2026-10-26T23:59:00-05:00",
+  "publish_at": "2026-10-26T17:01:02-05:00",
   "slides": [
     {
       "layout": "cover",
@@ -56,5 +56,10 @@
     "Portada: Una orden. Una IA. 647.000 posibles víctimas. Así lo documentó Unit 42 en julio de 2026.",
     "Qué pasó: un atacante conectó DeepSeek, un modelo de IA, a un agente autónomo; lo dirigía por Telegram sin confirmaciones; el agente encontró 647.000 servidores n8n expuestos; falló esta vez, pero intentar casi no cuesta. Fuente: Unit 42 vía BleepingComputer.",
     "Cierre VALCOM, resiliencia digital: Encuéntrate antes que ellos. Agenda una evaluación."
-  ]
+  ],
+  "buffer": {
+    "post_id": "6adfcd9eade6626d9315558e",
+    "mode": "shareNow",
+    "sent_at": "2026-10-26T22:01:02Z"
+  }
 }
