@@ -87,6 +87,10 @@ def main():
     for i, s in enumerate(slides, 1):
         if s.get("layout") not in LAYOUTS:
             E.append(f"slide {i}: layout '{s.get('layout')}' no existe ({sorted(LAYOUTS)})")
+        if s.get("layout") == "cover" and s.get("eyebrow"):
+            W.append(f"slide {i}: la portada no lleva texto encima del titular (solo la línea dorada); quita el eyebrow")
+        if s.get("layout") == "cover" and re.match(r"(?i)\s*así lo ", s.get("body", "")):
+            W.append(f"slide {i}: en la portada usa 'Según <fuente>, <mes año>' en vez de frases largas como 'Así lo documentó…'")
         if s.get("layout") == "stat" and not s.get("source"):
             E.append(f"slide {i}: una cifra sin fuente no se publica")
         img = s.get("image")
