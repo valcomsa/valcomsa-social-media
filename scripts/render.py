@@ -6,8 +6,8 @@ Requiere: pip install playwright pillow && python3 -m playwright install chromiu
 
 Marcado en textos: *texto* en headline -> dorado; **texto** en body -> dorado.
 
-Imágenes: cualquier slide acepta "image": {"file": "images/x.jpg", "mode": "full"|"band", "brief": "..."}.
-  full = foto a sangre detrás del texto (cover, quote, closing); band = franja de foto bajo el logo (stat, point, list).
+Imágenes: cualquier slide acepta "image": {"file": "images/x.jpg", "mode": "full"|"band"|"hero", "brief": "..."}.
+  full = foto a sangre detrás del texto (cover, quote, closing); band = franja de foto bajo el logo (stat, point, list); hero = logo/captura a color bajo el logo (portada).
   Si el archivo no existe se dibuja un marcador "IMAGEN PENDIENTE" con el brief, y check.py bloquea la publicación.
 """
 import html, json, re, sys, pathlib, tempfile

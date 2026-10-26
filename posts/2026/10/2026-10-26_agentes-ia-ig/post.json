@@ -1,6 +1,6 @@
 {
   "network": "instagram",
-  "status": "published",
+  "status": "ready",
   "pillar": "despertar",
   "campaign": "noticias-ciber",
   "title": "Agentes de IA atacan solos",
@@ -11,19 +11,17 @@
   ],
   "id": "2026-10-26_agentes-ia-ig",
   "format": "carousel",
-  "publish_at": "2026-10-26T17:01:02-05:00",
+  "publish_at": "2026-10-26T17:15:00-05:00",
   "slides": [
     {
       "layout": "cover",
-      "eyebrow": "Ataque con IA · Unit 42",
       "headline": "Una orden.\nUna IA.\n*647.000* posibles víctimas.",
-      "body": "Así lo documentó Unit 42 en julio de 2026.",
+      "body": "Según Unit 42, julio 2026.",
       "image": {
-        "file": "images/01-portada.jpg",
-        "mode": "full",
-        "rights": "aportada por la gerencia de VALCOM; origen y licencia no confirmados (publicación autorizada por el CEO bajo su responsabilidad)",
-        "position": "50% 50%",
-        "brief": "Pasillo de centro de datos, luz fría, vertical ≥1080×1350"
+        "file": "images/01-n8n.png",
+        "mode": "hero",
+        "rights": "logo de n8n (la tecnología del tema); captura aportada por la gerencia de VALCOM, origen no confirmado (publicación autorizada por el CEO bajo su responsabilidad)",
+        "brief": "Logo de n8n sobre fondo estrellado (gancho para quienes usan n8n)"
       }
     },
     {
@@ -37,11 +35,11 @@
         "Falló esta vez. Intentar casi no cuesta"
       ],
       "image": {
-        "file": "images/02-exposicion.jpg",
+        "file": "images/02-pasillo.jpg",
         "mode": "band",
         "rights": "aportada por la gerencia de VALCOM; origen y licencia no confirmados (publicación autorizada por el CEO bajo su responsabilidad)",
         "position": "50% 50%",
-        "brief": "Sala de servidores, horizontal ≥1600×800"
+        "brief": "Pasillo de centro de datos, luz fría"
       }
     },
     {
@@ -53,13 +51,8 @@
     }
   ],
   "alt_text": [
-    "Portada: Una orden. Una IA. 647.000 posibles víctimas. Así lo documentó Unit 42 en julio de 2026.",
+    "Portada: logo de n8n. Una orden. Una IA. 647.000 posibles víctimas. Según Unit 42, julio 2026.",
     "Qué pasó: un atacante conectó DeepSeek, un modelo de IA, a un agente autónomo; lo dirigía por Telegram sin confirmaciones; el agente encontró 647.000 servidores n8n expuestos; falló esta vez, pero intentar casi no cuesta. Fuente: Unit 42 vía BleepingComputer.",
     "Cierre VALCOM, resiliencia digital: Encuéntrate antes que ellos. Agenda una evaluación."
-  ],
-  "buffer": {
-    "post_id": "6adfcd9eade6626d9315558e",
-    "mode": "shareNow",
-    "sent_at": "2026-10-26T22:01:02Z"
-  }
+  ]
 }

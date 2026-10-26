@@ -1,6 +1,6 @@
 {
   "network": "linkedin",
-  "status": "published",
+  "status": "ready",
   "pillar": "despertar",
   "campaign": "noticias-ciber",
   "title": "Tu próximo atacante delega: agentes de IA",
@@ -11,26 +11,31 @@
   ],
   "id": "2026-10-26_agentes-ia-li",
   "format": "document",
-  "publish_at": "2026-10-26T17:01:13-05:00",
+  "publish_at": "2026-10-26T17:15:00-05:00",
   "slides": [
     {
       "layout": "cover",
-      "eyebrow": "Ataque con IA · Unit 42",
       "headline": "Una orden.\nUna IA.\n*647.000* posibles víctimas.",
-      "body": "Así lo documentó Unit 42 en julio de 2026.",
+      "body": "Según Unit 42, julio 2026.",
       "image": {
-        "file": "images/01-portada.jpg",
-        "mode": "full",
-        "rights": "aportada por la gerencia de VALCOM; origen y licencia no confirmados (publicación autorizada por el CEO bajo su responsabilidad)",
-        "position": "50% 50%",
-        "brief": "Pasillo de centro de datos, luz fría, vertical ≥1080×1350"
+        "file": "images/01-n8n.png",
+        "mode": "hero",
+        "rights": "logo de n8n (la tecnología del tema); captura aportada por la gerencia de VALCOM, origen no confirmado (publicación autorizada por el CEO bajo su responsabilidad)",
+        "brief": "Logo de n8n sobre fondo estrellado (gancho para quienes usan n8n)"
       }
     },
     {
       "layout": "point",
       "number": "01",
-      "title": "Una orden, y la IA siguió sola",
-      "body": "Un atacante conectó **DeepSeek**, un modelo de IA, a Hermes, un agente que ejecuta comandos por su cuenta. Lo dirigía por Telegram y no pedía confirmaciones."
+      "title": "La IA siguió sola",
+      "body": "Un atacante conectó **DeepSeek**, un modelo de IA, a Hermes, un agente que ejecuta comandos solo. Lo dirigía por Telegram, sin confirmaciones.",
+      "image": {
+        "file": "images/02-pasillo.jpg",
+        "mode": "band",
+        "rights": "aportada por la gerencia de VALCOM; origen y licencia no confirmados (publicación autorizada por el CEO bajo su responsabilidad)",
+        "position": "50% 50%",
+        "brief": "Pasillo de centro de datos, luz fría"
+      }
     },
     {
       "layout": "stat",
@@ -71,17 +76,12 @@
     }
   ],
   "alt_text": [
-    "Portada: Una orden. Una IA. 647.000 posibles víctimas. Así lo documentó Unit 42 en julio de 2026.",
-    "Punto 01: Una orden, y la IA siguió sola. Un atacante conectó DeepSeek, un modelo de IA, a Hermes, un agente que ejecuta comandos por su cuenta, dirigido por Telegram y sin confirmaciones.",
+    "Portada: logo de n8n. Una orden. Una IA. 647.000 posibles víctimas. Según Unit 42, julio 2026.",
+    "Punto 01: La IA siguió sola. Un atacante conectó DeepSeek, un modelo de IA, a Hermes, un agente que ejecuta comandos solo, dirigido por Telegram y sin confirmaciones.",
     "Cifra: 647.000 instancias de n8n, una herramienta de automatización, que el agente encontró expuestas en internet. Fuente: Unit 42 vía BleepingComputer, 31 de julio de 2026.",
     "Punto 02: El agente falló, esta vez. Ningún ataque autónomo comprometió a nadie; los tres accesos confirmados fueron manuales. Se delató al exponer sus propias llaves y registros.",
     "Punto 03: Tu respaldo también es puerta. En Taiwán se advirtió que los agentes de IA usan sistemas secundarios, como respaldo y pruebas, de escalón.",
     "Lista: lo que revisamos. APIs y servicios sin autenticación, parches críticos con plazos cortos, respaldos y pruebas aislados, automatizaciones con mínimos privilegios.",
     "Cierre VALCOM, resiliencia digital: Encuéntrate antes que ellos. Agenda una evaluación."
-  ],
-  "buffer": {
-    "post_id": "6adfcda9c26d8b40cc791673",
-    "mode": "shareNow",
-    "sent_at": "2026-10-26T22:01:13Z"
-  }
+  ]
 }
