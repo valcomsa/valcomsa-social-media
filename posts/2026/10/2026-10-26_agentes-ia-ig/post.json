@@ -1,0 +1,60 @@
+{
+  "network": "instagram",
+  "status": "ready",
+  "pillar": "despertar",
+  "campaign": "noticias-ciber",
+  "title": "Agentes de IA atacan solos",
+  "first_comment": "",
+  "sources": [
+    "https://www.bleepingcomputer.com/news/security/hacker-uses-deepseek-ai-to-autonomously-attack-vulnerable-servers/",
+    "https://focustaiwan.tw/society/202608130011"
+  ],
+  "id": "2026-10-26_agentes-ia-ig",
+  "format": "carousel",
+  "publish_at": "2026-10-26T23:59:00-05:00",
+  "slides": [
+    {
+      "layout": "cover",
+      "eyebrow": "Ataque con IA · Unit 42",
+      "headline": "Una orden.\nUna IA.\n*647.000* posibles víctimas.",
+      "body": "Así lo documentó Unit 42 en julio de 2026.",
+      "image": {
+        "file": "images/01-portada.jpg",
+        "mode": "full",
+        "rights": "aportada por la gerencia de VALCOM; origen y licencia no confirmados (publicación autorizada por el CEO bajo su responsabilidad)",
+        "position": "50% 50%",
+        "brief": "Pasillo de centro de datos, luz fría, vertical ≥1080×1350"
+      }
+    },
+    {
+      "layout": "list",
+      "eyebrow": "Qué pasó",
+      "title": "Un agente de IA, sin permiso",
+      "items": [
+        "Conectó **DeepSeek** (IA) a un agente autónomo",
+        "Lo dirigía por Telegram, sin confirmaciones",
+        "Halló 647.000 servidores **n8n** expuestos",
+        "Falló esta vez. Intentar casi no cuesta"
+      ],
+      "image": {
+        "file": "images/02-exposicion.jpg",
+        "mode": "band",
+        "rights": "aportada por la gerencia de VALCOM; origen y licencia no confirmados (publicación autorizada por el CEO bajo su responsabilidad)",
+        "position": "50% 50%",
+        "brief": "Sala de servidores, horizontal ≥1600×800"
+      }
+    },
+    {
+      "layout": "closing",
+      "eyebrow": "VALCOM · Resiliencia digital",
+      "headline": "Encuéntrate\n*antes* que ellos.",
+      "body": "Una evaluación de tu superficie expuesta: lo primero que vería un agente automatizado.",
+      "cta": "Agenda una evaluación"
+    }
+  ],
+  "alt_text": [
+    "Portada: Una orden. Una IA. 647.000 posibles víctimas. Así lo documentó Unit 42 en julio de 2026.",
+    "Qué pasó: un atacante conectó DeepSeek, un modelo de IA, a un agente autónomo; lo dirigía por Telegram sin confirmaciones; el agente encontró 647.000 servidores n8n expuestos; falló esta vez, pero intentar casi no cuesta. Fuente: Unit 42 vía BleepingComputer.",
+    "Cierre VALCOM, resiliencia digital: Encuéntrate antes que ellos. Agenda una evaluación."
+  ]
+}

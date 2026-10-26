@@ -1,0 +1,82 @@
+{
+  "network": "linkedin",
+  "status": "ready",
+  "pillar": "despertar",
+  "campaign": "noticias-ciber",
+  "title": "Tu próximo atacante delega: agentes de IA",
+  "first_comment": "",
+  "sources": [
+    "https://www.bleepingcomputer.com/news/security/hacker-uses-deepseek-ai-to-autonomously-attack-vulnerable-servers/",
+    "https://focustaiwan.tw/society/202608130011"
+  ],
+  "id": "2026-10-26_agentes-ia-li",
+  "format": "document",
+  "publish_at": "2026-10-26T23:59:00-05:00",
+  "slides": [
+    {
+      "layout": "cover",
+      "eyebrow": "Ataque con IA · Unit 42",
+      "headline": "Una orden.\nUna IA.\n*647.000* posibles víctimas.",
+      "body": "Así lo documentó Unit 42 en julio de 2026.",
+      "image": {
+        "file": "images/01-portada.jpg",
+        "mode": "full",
+        "rights": "aportada por la gerencia de VALCOM; origen y licencia no confirmados (publicación autorizada por el CEO bajo su responsabilidad)",
+        "position": "50% 50%",
+        "brief": "Pasillo de centro de datos, luz fría, vertical ≥1080×1350"
+      }
+    },
+    {
+      "layout": "point",
+      "number": "01",
+      "title": "Una orden, y la IA siguió sola",
+      "body": "Un atacante conectó **DeepSeek**, un modelo de IA, a Hermes, un agente que ejecuta comandos por su cuenta. Lo dirigía por Telegram y no pedía confirmaciones."
+    },
+    {
+      "layout": "stat",
+      "eyebrow": "Lo que buscó",
+      "value": "647.000",
+      "label": "instancias de **n8n**, una herramienta de automatización, que el agente encontró expuestas en internet.",
+      "source": "Unit 42 vía BleepingComputer, 31 jul 2026"
+    },
+    {
+      "layout": "point",
+      "number": "02",
+      "title": "El agente falló. Esta vez.",
+      "body": "Ningún ataque autónomo comprometió a nadie; los tres accesos confirmados fueron manuales. Hasta se delató: expuso sus propias llaves y registros."
+    },
+    {
+      "layout": "point",
+      "number": "03",
+      "title": "Tu respaldo también es puerta",
+      "body": "En Taiwán, tras ataques a agencias de gobierno con agentes de IA, se advirtió que usan **sistemas secundarios**, como respaldo y pruebas, de escalón."
+    },
+    {
+      "layout": "list",
+      "eyebrow": "Lo que revisamos",
+      "title": "Lo que vería un agente",
+      "items": [
+        "APIs y servicios sin autenticación",
+        "Parches críticos con plazos cortos",
+        "Respaldos y pruebas **aislados**",
+        "Automatizaciones con mínimos privilegios"
+      ]
+    },
+    {
+      "layout": "closing",
+      "eyebrow": "VALCOM · Resiliencia digital",
+      "headline": "Encuéntrate\n*antes* que ellos.",
+      "body": "Una evaluación de tu superficie expuesta: lo primero que vería un agente automatizado.",
+      "cta": "Agenda una evaluación"
+    }
+  ],
+  "alt_text": [
+    "Portada: Una orden. Una IA. 647.000 posibles víctimas. Así lo documentó Unit 42 en julio de 2026.",
+    "Punto 01: Una orden, y la IA siguió sola. Un atacante conectó DeepSeek, un modelo de IA, a Hermes, un agente que ejecuta comandos por su cuenta, dirigido por Telegram y sin confirmaciones.",
+    "Cifra: 647.000 instancias de n8n, una herramienta de automatización, que el agente encontró expuestas en internet. Fuente: Unit 42 vía BleepingComputer, 31 de julio de 2026.",
+    "Punto 02: El agente falló, esta vez. Ningún ataque autónomo comprometió a nadie; los tres accesos confirmados fueron manuales. Se delató al exponer sus propias llaves y registros.",
+    "Punto 03: Tu respaldo también es puerta. En Taiwán se advirtió que los agentes de IA usan sistemas secundarios, como respaldo y pruebas, de escalón.",
+    "Lista: lo que revisamos. APIs y servicios sin autenticación, parches críticos con plazos cortos, respaldos y pruebas aislados, automatizaciones con mínimos privilegios.",
+    "Cierre VALCOM, resiliencia digital: Encuéntrate antes que ellos. Agenda una evaluación."
+  ]
+}
