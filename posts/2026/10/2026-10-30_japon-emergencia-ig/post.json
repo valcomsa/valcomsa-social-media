@@ -1,0 +1,60 @@
+{
+  "id": "2026-10-30_japon-emergencia-ig",
+  "network": "instagram",
+  "format": "carousel",
+  "publish_at": "2026-10-30T09:00:00-05:00",
+  "status": "draft",
+  "pillar": "despertar",
+  "campaign": "actualidad",
+  "title": "",
+  "first_comment": "",
+  "slides": [
+    {
+      "layout": "cover",
+      "headline": "Japón declaró *emergencia* en el ciberespacio.",
+      "body": "Ataques con IA, octubre 2026",
+      "image": {
+        "file": "foto_portada.png",
+        "mode": "full",
+        "brief": "Estación o andén de tren vacío de noche, luz fría, sin logos ni personas identificables (idea de servicio detenido)",
+        "rights": "licenciada: Pexels (https://www.pexels.com/es-es/foto/transporte-publico-transporte-asientos-perspectiva-decreciente-17075835/)"
+      }
+    },
+    {
+      "layout": "list",
+      "eyebrow": "Qué pasó",
+      "title": "Lo que dejó la ola",
+      "items": [
+        "Más de 14 millones de personas expuestas",
+        "Un ransomware llegó a 495 clientes",
+        "Phishing con IA, sin errores de idioma"
+      ],
+      "image": {
+        "file": "foto_lista.png",
+        "mode": "band",
+        "brief": "Calle de Tokio de noche con carteles luminosos, recorte horizontal",
+        "rights": "licenciada: Pexels (https://www.pexels.com/es-es/foto/calle-carretera-ciudad-edificios-34142/)"
+      }
+    },
+    {
+      "layout": "closing",
+      "eyebrow": "Si ya ocurrió",
+      "headline": "Si fue ransomware, *no negocie*.",
+      "body": "Únicos en Ecuador con garantía 100% por contrato: si no recuperamos, no paga.",
+      "cta": "Escríbanos al WhatsApp 098 722 5990"
+    }
+  ],
+  "alt_text": [
+    "Portada: Japón declaró emergencia en el ciberespacio. Ataques con IA, octubre 2026.",
+    "Qué pasó: más de 14 millones de personas expuestas, un ransomware a un proveedor llegó a 495 clientes y phishing con IA sin errores de idioma.",
+    "Cierre: si fue ransomware, no negocie. Únicos en Ecuador con garantía 100% por contrato: si no recuperamos, no paga. Escríbanos al WhatsApp 098 722 5990."
+  ],
+  "sources": [
+    "https://www.emol.com/noticias/Internacional/2026/10/27/1215246/japon-ciberataques-ia-empresas-seguridad.html",
+    "https://www.fayerwayer.com/internet/2026/10/28/el-propio-internet-esta-al-borde-del-colapso-japon-declara-estado-de-emergencia-en-el-ciberespacio-por-una-ola-masiva-de-ciberataques-potenciados-por-ia/"
+  ],
+  "buffer": {
+    "post_id": "",
+    "scheduled_at": ""
+  }
+}
