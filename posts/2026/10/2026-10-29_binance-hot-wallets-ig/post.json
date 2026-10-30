@@ -1,0 +1,64 @@
+{
+  "id": "2026-10-29_binance-hot-wallets-ig",
+  "network": "instagram",
+  "format": "carousel",
+  "publish_at": "2026-10-30T02:59:45+00:00",
+  "status": "draft",
+  "pillar": "despertar",
+  "campaign": "actualidad",
+  "title": "Binance: posible salida de fondos",
+  "first_comment": "",
+  "slides": [
+    {
+      "layout": "cover",
+      "eyebrow": "Última hora",
+      "headline": "Binance investiga una *posible* salida de fondos.",
+      "body": "Analistas reportan hasta $5.800M en movimientos sospechosos. Binance aún no confirma cifras.",
+      "image": {
+        "file": "foto_bitcoin.jpg",
+        "mode": "full",
+        "position": "50% 100%",
+        "brief": "Monedas bitcoin sobre teclado con gráfico de mercado",
+        "rights": "licenciada: Pexels, foto de Alesia Kosik (enlace exacto no verificado)"
+      }
+    },
+    {
+      "layout": "list",
+      "eyebrow": "Qué se sabe",
+      "title": "Lo confirmado",
+      "items": [
+        "Binance investiga un posible incidente",
+        "Tether y Circle congelaron más de $1.700M",
+        "Salidas en Ethereum, Arbitrum y Avalanche"
+      ],
+      "image": {
+        "file": "foto_bitcoin.jpg",
+        "mode": "full",
+        "position": "50% 100%",
+        "brief": "Monedas bitcoin sobre teclado con gráfico de mercado",
+        "rights": "licenciada: Pexels, foto de Alesia Kosik (enlace exacto no verificado)"
+      }
+    },
+    {
+      "layout": "closing",
+      "eyebrow": "La pregunta para su empresa",
+      "headline": "Si sus claves cayeran hoy, ¿cuánto tardaría en *enterarse*?",
+      "body": "Un análisis de infraestructura revisa accesos, custodia y capacidad de respuesta antes del incidente.",
+      "cta": "Solicite su análisis de infraestructura"
+    }
+  ],
+  "alt_text": [
+    "Portada: Binance investiga una posible salida de fondos. Analistas reportan hasta 5.800 millones de dólares en movimientos sospechosos.",
+    "Lo confirmado hasta hoy: Binance investiga un posible incidente de seguridad; Tether y Circle congelaron más de 1.700 millones de dólares en stablecoins; las salidas se detectaron en Ethereum, Arbitrum y Avalanche.",
+    "Cierre: si sus claves cayeran hoy, ¿cuánto tardaría en enterarse? Solicite su análisis de infraestructura."
+  ],
+  "sources": [
+    "https://www.theblock.co/news/markets/2026-10-29-binance-investigating-hack-suspicious-outflows-5-billion-432171",
+    "https://www.bleepingcomputer.com/news/security/binance-probes-potential-58-billion-crypto-theft-hack/",
+    "https://news.bitcoin.com/security/inside-the-5-8b-binance-hack-whats-confirmed-and-what-isnt/"
+  ],
+  "buffer": {
+    "post_id": "",
+    "scheduled_at": ""
+  }
+}
