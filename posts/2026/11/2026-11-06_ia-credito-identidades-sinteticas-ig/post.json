@@ -1,0 +1,23 @@
+{
+  "id": "2026-11-06_ia-credito-identidades-sinteticas-ig",
+  "network": "instagram",
+  "format": "carousel",
+  "publish_at": "2026-11-06T09:00:00-05:00",
+  "status": "ready",
+  "pillar": "despertar",
+  "campaign": "actualidad",
+  "title": "IA de crédito e identidades sintéticas",
+  "first_comment": "",
+  "slides": [
+    {"layout": "cover", "headline": "Su IA aprueba créditos en segundos. *¿A quién?*", "body": "Pérdidas por identidades sintéticas en EE. UU.: más de $3.100M proyectados en 2026. Según Mitek y Datos Insights, junio 2026."},
+    {"layout": "list", "eyebrow": "Qué muestra el estudio", "title": "Identidades sintéticas", "items": ["Perfiles que mezclan datos reales y falsos", "Las pérdidas crecen cerca de 16% al año", "4 de cada 10 reportan más ataques con IA"]},
+    {"layout": "closing", "eyebrow": "La pregunta para su empresa", "headline": "Si un modelo decide créditos solo, ¿quién audita al *modelo*?", "body": "Un análisis de infraestructura revisa el modelo, sus datos y sus reglas de decisión antes de que le entreguen la chequera.", "cta": "Solicite su análisis de infraestructura"}
+  ],
+  "alt_text": [
+    "Portada: su IA aprueba créditos en segundos, ¿a quién? Se proyectan más de 3.100 millones de dólares en pérdidas por identidades sintéticas en EE. UU. en 2026, según Mitek y Datos Insights.",
+    "Identidades sintéticas en cifras: perfiles que mezclan datos reales y falsos; las pérdidas crecen cerca de 16% al año; 4 de cada 10 instituciones reportan más ataques con IA.",
+    "Cierre: si un modelo decide créditos solo, ¿quién audita al modelo? Solicite su análisis de infraestructura."
+  ],
+  "sources": ["https://www.cfodive.com/news/synthetic-identity-fraud-surges-criminals-weaponize-ai/822557/"],
+  "buffer": {"post_id": "", "scheduled_at": ""}
+}
