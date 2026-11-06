@@ -1,0 +1,63 @@
+{
+  "id": "2026-11-07_botnet-xcpe-cajas-android-tv-ig",
+  "network": "instagram",
+  "format": "carousel",
+  "publish_at": "2026-11-07T09:00:00-05:00",
+  "status": "ready",
+  "pillar": "despertar",
+  "campaign": "actualidad",
+  "title": "Botnet XCPE: puerta trasera de fábrica",
+  "first_comment": "",
+  "slides": [
+    {
+      "layout": "cover",
+      "headline": "La puerta trasera venía *en la caja*.",
+      "body": "Más de 1,3 millones de cajas de streaming Android TV traían un acceso oculto de fábrica. Según Google, noviembre 2026.",
+      "image": {
+        "file": "foto_portada.jpg",
+        "mode": "full",
+        "position": "50% 50%",
+        "brief": "pareja de espaldas frente a un televisor",
+        "rights": "aportada por VALCOM; sin marca de agua; origen y licencia por confirmar"
+      }
+    },
+    {
+      "layout": "list",
+      "eyebrow": "Qué documentó Google",
+      "title": "Una botnet de fábrica",
+      "items": [
+        "Código oculto en el firmware del equipo",
+        "Sobrevivía a reinicios y a desinstalar apps",
+        "Se alquilaba a terceros: fraude y robo de datos",
+        "También en carteles digitales y equipos de telesalud"
+      ],
+      "image": {
+        "file": "foto_portada.jpg",
+        "mode": "full",
+        "position": "50% 30%",
+        "brief": "televisor en pared de ladrillo",
+        "rights": "aportada por VALCOM; sin marca de agua; origen y licencia por confirmar"
+      }
+    },
+    {
+      "layout": "closing",
+      "eyebrow": "La pregunta para su empresa",
+      "headline": "¿Quién revisó lo que *conectó* a su red?",
+      "body": "Un análisis de infraestructura inventaría cada dispositivo conectado y verifica que esté aislado de lo que importa.",
+      "cta": "Solicite su análisis de infraestructura"
+    }
+  ],
+  "alt_text": [
+    "Portada: la puerta trasera venía en la caja. Más de 1,3 millones de cajas de streaming Android TV traían un acceso oculto de fábrica, según Google, noviembre de 2026.",
+    "Qué documentó Google: código oculto en el firmware; sobrevivía a reinicios y a desinstalar aplicaciones; se alquilaba a terceros para fraude y robo de datos; también apareció en carteles digitales y equipos de telesalud.",
+    "Cierre: ¿quién revisó lo que conectó a su red? Solicite su análisis de infraestructura."
+  ],
+  "sources": [
+    "https://www.helpnetsecurity.com/2026/11/02/xcpe-botnet-android-backdoor/",
+    "https://cyberscoop.com/google-disrupts-xcpe-botnet-videostrong-android-devices/"
+  ],
+  "buffer": {
+    "post_id": "",
+    "scheduled_at": ""
+  }
+}
