@@ -1,0 +1,63 @@
+{
+  "id": "2026-11-09_orova-esxi-ingenieria-ig",
+  "network": "instagram",
+  "format": "carousel",
+  "publish_at": "2026-11-10T09:00:00-05:00",
+  "status": "ready",
+  "pillar": "despertar",
+  "campaign": "actualidad",
+  "title": "Orova: ransomware contra servidores virtuales",
+  "first_comment": "",
+  "slides": [
+    {
+      "layout": "cover",
+      "headline": "Un grupo reclama 286 GB de una *ingeniería*.",
+      "body": "La empresa aún no confirma el ataque. Según rastreadores de ransomware, noviembre 2026.",
+      "image": {
+        "file": "foto_servidores.png",
+        "mode": "full",
+        "position": "60% 50%",
+        "brief": "racks de servidores en un centro de datos",
+        "rights": "aportada por VALCOM; origen y licencia por confirmar; aspecto de imagen generada por IA"
+      }
+    },
+    {
+      "layout": "list",
+      "eyebrow": "Qué se sabe",
+      "title": "Reclamado y documentado",
+      "items": [
+        "Reclamo publicado en el portal del grupo",
+        "Cifra reclamada, sin verificar: 285,8 GB",
+        "Orova ataca servidores virtuales (VMware ESXi)",
+        "Apaga las máquinas virtuales antes de cifrarlas"
+      ],
+      "image": {
+        "file": "foto_servidores.png",
+        "mode": "full",
+        "position": "20% 50%",
+        "brief": "racks de servidores en un centro de datos",
+        "rights": "aportada por VALCOM; origen y licencia por confirmar; aspecto de imagen generada por IA"
+      }
+    },
+    {
+      "layout": "closing",
+      "eyebrow": "La pregunta para su empresa",
+      "headline": "Si cayera su hipervisor hoy, ¿qué *seguiría* funcionando?",
+      "body": "Un análisis de infraestructura revisa su virtualización, sus accesos y su capacidad real de recuperación.",
+      "cta": "Solicite su análisis de infraestructura"
+    }
+  ],
+  "alt_text": [
+    "Portada: un grupo de ransomware reclama 286 gigabytes de datos de una firma de ingeniería. La empresa aún no confirma el ataque, según rastreadores de ransomware, noviembre de 2026.",
+    "Qué se sabe: reclamo publicado en el portal del grupo; cifra reclamada sin verificar de 285,8 gigabytes; Orova ataca servidores virtuales VMware ESXi; apaga las máquinas virtuales antes de cifrarlas.",
+    "Cierre: si cayera su hipervisor hoy, ¿qué seguiría funcionando? Solicite su análisis de infraestructura."
+  ],
+  "sources": [
+    "https://www.sonicwall.com/blog/orova-a-new-linux-ransomware-targeting-esxi-hypervisors",
+    "https://www.ransomware.live/"
+  ],
+  "buffer": {
+    "post_id": "",
+    "scheduled_at": ""
+  }
+}
