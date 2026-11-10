@@ -1,0 +1,59 @@
+{
+  "id": "2026-11-10_banco-proveedor-ig",
+  "network": "instagram",
+  "format": "carousel",
+  "publish_at": "2026-11-11T09:00:00-05:00",
+  "status": "draft",
+  "pillar": "despertar",
+  "campaign": "actualidad",
+  "title": "Banco francés: acceso por el proveedor y qué exige la norma ecuatoriana",
+  "first_comment": "",
+  "slides": [
+    {
+      "layout": "cover",
+      "headline": "Su eslabón más débil es su *proveedor*.",
+      "body": "Banco francés: unos €100M robados vía la plataforma de un tercero. Reuters, nov. 2026.",
+      "image": {
+        "file": "images/banco_fisura.jpg",
+        "mode": "band",
+        "position": "center",
+        "brief": "Ilustración conceptual: edificio bancario agrietado (metáfora de eslabón débil; no es el banco del caso).",
+        "rights": "Aportada por el usuario; licencia y origen por confirmar antes de publicar"
+      }
+    },
+    {
+      "layout": "list",
+      "eyebrow": "Qué hacer y qué respalda la norma",
+      "title": "Cuatro controles sobre sus proveedores",
+      "items": [
+        "Evalúe y califique al proveedor antes de contratar",
+        "Contrato: auditoría, datos y aviso de incidentes",
+        "Controle y retire los accesos del proveedor",
+        "Exija aviso en 2 días; usted notifica en 5"
+      ]
+    },
+    {
+      "layout": "closing",
+      "eyebrow": "Por qué le conviene actuar",
+      "headline": "Contratar sin garantías ya es *su* infracción.",
+      "body": "La LOPDP sanciona a quien elige un encargado sin garantías suficientes, con multas del 0,1% al 1% de su facturación anual. Un análisis de infraestructura deja la evidencia de debida diligencia.",
+      "cta": "Solicite su análisis de infraestructura"
+    }
+  ],
+  "alt_text": [
+    "Portada: su eslabón más débil es su proveedor. Ilustración conceptual de un edificio bancario agrietado. Un banco francés reportó el robo de unos 100 millones de euros tras un acceso por la plataforma de un proveedor, según Reuters, noviembre de 2026.",
+    "Cuatro controles sobre sus proveedores: evalúe y califique antes de contratar; contrato con auditoría, datos y aviso de incidentes; controle y retire accesos; exija aviso en 2 días y usted notifica en 5.",
+    "Cierre: contratar sin garantías ya es su infracción. La LOPDP sanciona elegir un encargado sin garantías suficientes, con multas del 0,1% al 1% de la facturación anual. Solicite su análisis de infraestructura."
+  ],
+  "sources": [
+    "https://www.bankinfosecurity.com/french-bank-loses-100-million-euros-in-cyberattack-a-33309",
+    "https://www.cutoday.info/Fresh-Today/French-Bank-Reports-112-Million-Stolen-In-Cyberattack-Through-Third-Party-Provider",
+    "Ley Orgánica de Protección de Datos Personales, arts. 34, 43, 47, 67-72",
+    "Resolución SB-2021-2126, art. 24 (servicios provistos por terceros)",
+    "Resolución SEPS-2022-002 (seguridad de la información, control de gestión con terceros)"
+  ],
+  "buffer": {
+    "post_id": "",
+    "scheduled_at": ""
+  }
+}
