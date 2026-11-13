@@ -1,0 +1,65 @@
+{
+  "id": "2026-11-13_microsoft-dependencia-ig",
+  "network": "instagram",
+  "format": "carousel",
+  "publish_at": "2026-11-14T09:00:00-05:00",
+  "status": "draft",
+  "pillar": "despertar",
+  "campaign": "actualidad",
+  "title": "Caída global de Microsoft 365 (12 nov 2026): dependencia de un proveedor",
+  "first_comment": "",
+  "slides": [
+    {
+      "layout": "cover",
+      "headline": "Su proveedor se cae. *Su* negocio también.",
+      "body": "El 12 de noviembre de 2026, Microsoft 365 cayó a nivel global. Sin causa publicada.",
+      "image": {
+        "file": "images/pexels-36040448.jpg",
+        "mode": "full",
+        "position": "50% 50%",
+        "brief": "Corredor azul con datos digitales (Pexels).",
+        "rights": "Pexels, https://www.pexels.com/photo/36040448/, fotógrafo Oktay Köseoğlu, licencia Pexels (Free); confirmar texto de licencia antes de publicar"
+      }
+    },
+    {
+      "layout": "list",
+      "eyebrow": "Antes de la próxima caída",
+      "title": "Cuatro preguntas para su Directorio",
+      "items": [
+        "¿Qué procesos se detienen sin correo?",
+        "¿Qué respaldo existe fuera del proveedor?",
+        "¿Qué exige el contrato si el servicio cae?",
+        "¿Quién notifica en 5 días si hay brecha?"
+      ],
+      "image": {
+        "file": "images/pexels-36040448.jpg",
+        "mode": "full",
+        "position": "50% 50%",
+        "brief": "Corredor azul con datos digitales (Pexels).",
+        "rights": "Pexels, https://www.pexels.com/photo/36040448/, fotógrafo Oktay Köseoğlu, licencia Pexels (Free); confirmar texto de licencia antes de publicar"
+      }
+    },
+    {
+      "layout": "closing",
+      "eyebrow": "Assessment de Gobernanza IT",
+      "headline": "Resiliencia no es *licencia*.",
+      "body": "Mapeamos sus procesos críticos y su dependencia de proveedores antes de que llegue el incidente.",
+      "cta": "Solicite su assessment"
+    }
+  ],
+  "alt_text": [
+    "Portada: su proveedor se cae, su negocio también. Sobre un corredor azul con datos digitales. El 12 de noviembre de 2026, Microsoft 365 cayó a nivel global, sin causa publicada.",
+    "Cuatro preguntas para el Directorio antes de la próxima caída, sobre un corredor azul con datos digitales: qué procesos se detienen sin correo, qué respaldo existe fuera del proveedor, qué exige el contrato y quién notifica en 5 días si hay brecha.",
+    "Cierre: resiliencia no es licencia. Assessment de Gobernanza IT de VALCOM. Solicite su assessment en www.valcomsa.com."
+  ],
+  "sources": [
+    "https://www.securityweek.com/microsoft-365-outage-disrupts-outlook-exchange-online-and-teams/",
+    "https://www.aljazeera.com/news/2026/11/13/microsoft-hit-by-global-outages-what-happened-and-why",
+    "LOPDP art. 43",
+    "Foto: https://www.pexels.com/photo/36040448/ (Oktay Köseoğlu, Pexels)"
+  ],
+  "buffer": {
+    "post_id": "",
+    "scheduled_at": ""
+  }
+}
