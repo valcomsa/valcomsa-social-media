@@ -1,0 +1,48 @@
+{
+  "id": "2026-11-16_voz-clonada-ig",
+  "network": "instagram",
+  "format": "carousel",
+  "publish_at": "2026-11-17T09:00:00-05:00",
+  "status": "draft",
+  "pillar": "despertar",
+  "campaign": "actualidad",
+  "title": "Voz clonada y transferencia reportada: el control está en el proceso",
+  "first_comment": "",
+  "slides": [
+    {
+      "layout": "cover",
+      "headline": "Una voz clonada *movió* 95 millones de euros.",
+      "body": "Según IBTimes, el caso reportado en Italia combinó un WhatsApp con identidad falsa y una llamada con la voz de un abogado sénior."
+    },
+    {
+      "layout": "list",
+      "eyebrow": "Lo que falló no fue la biometría",
+      "title": "Cuatro controles que no dependen de la voz",
+      "items": [
+        "¿Toda transferencia se confirma por un canal distinto?",
+        "¿Quién puede ordenar un pago por llamada o mensaje?",
+        "¿Qué monto activa doble aprobación?",
+        "¿Estos controles se prueban con simulacros?"
+      ]
+    },
+    {
+      "layout": "closing",
+      "eyebrow": "Assessment de Gobernanza IT",
+      "headline": "La confianza no es *control*.",
+      "body": "Auditamos cómo se autorizan pagos y accesos antes de que alguien imite la voz de su Directorio.",
+      "cta": "Solicite su assessment"
+    }
+  ],
+  "alt_text": [
+    "Portada: una voz clonada movió 95 millones de euros, según IBTimes. Fondo azul medianoche con titular dorado.",
+    "Cuatro controles que no dependen de la voz: confirmación por otro canal, quién ordena pagos, umbral de doble aprobación y simulacros.",
+    "Cierre: la confianza no es control. Solicite su assessment de gobernanza IT."
+  ],
+  "sources": [
+    "IBTimes UK, 30 sep 2026: https://www.ibtimes.co.uk/ai-voice-cloning-bank-fraud-108-million-1822570 (caso reportado por prensa, no confirmado de forma independiente)"
+  ],
+  "buffer": {
+    "post_id": "",
+    "scheduled_at": ""
+  }
+}
