@@ -1,0 +1,63 @@
+{
+  "id": "2026-11-17_hospital-sistemas-fisicos-ig",
+  "network": "instagram",
+  "format": "carousel",
+  "publish_at": "2026-11-18T09:00:00-05:00",
+  "status": "draft",
+  "pillar": "despertar",
+  "campaign": "actualidad",
+  "title": "Ransomware en sistemas físicos de un hospital canadiense",
+  "first_comment": "",
+  "slides": [
+    {
+      "layout": "cover",
+      "headline": "Un ransomware llegó a las *puertas* de un hospital.",
+      "body": "Según The Register, en agosto de 2026 un ataque afectó control de accesos, HVAC y credenciales de personal en un hospital canadiense.",
+      "image": {
+        "file": "images/pexels-28318745.jpg",
+        "mode": "full",
+        "position": "50% 50%",
+        "brief": "Bolsa de suero intravenoso en quirófano (Pexels).",
+        "rights": "Pexels, https://www.pexels.com/photo/28318745/, título 'perf 04', fotógrafo Stéf -b., licencia Pexels (Free)"
+      }
+    },
+    {
+      "layout": "list",
+      "eyebrow": "Sistemas físicos, misma red",
+      "title": "Cuatro preguntas para su Directorio",
+      "items": [
+        "¿Los sistemas del edificio están separados de la red corporativa?",
+        "¿Quién controla puertas, HVAC y accesos desde la red?",
+        "¿Qué pasa con la operación si estos sistemas se bloquean?",
+        "¿Se prueba la contención antes de un incidente?"
+      ],
+      "image": {
+        "file": "images/pexels-28318745.jpg",
+        "mode": "full",
+        "position": "50% 50%",
+        "brief": "Bolsa de suero intravenoso en quirófano (Pexels).",
+        "rights": "Pexels, https://www.pexels.com/photo/28318745/, título 'perf 04', fotógrafo Stéf -b., licencia Pexels (Free)"
+      }
+    },
+    {
+      "layout": "closing",
+      "eyebrow": "Assessment de Gobernanza IT",
+      "headline": "Su edificio también es *superficie* de ataque.",
+      "body": "Mapeamos la segmentación entre sistemas físicos y red corporativa antes de que alguien los bloquee.",
+      "cta": "Solicite su assessment"
+    }
+  ],
+  "alt_text": [
+    "Portada: un ransomware afectó control de accesos, HVAC y credenciales en un hospital canadiense, según The Register.",
+    "Cuatro preguntas para el Directorio sobre separación de sistemas físicos, control de accesos, continuidad operativa y pruebas de contención.",
+    "Cierre: su edificio también es superficie de ataque. Solicite su assessment de gobernanza IT."
+  ],
+  "sources": [
+    "The Register, 17 oct 2026: https://www.theregister.com/security/2026/10/17/cybercrims-go-beyond-stealing-data-to-attack-physical-building-systems/5303677 (hospital canadiense no nombrado; ataque de agosto de 2026)",
+    "Foto: https://www.pexels.com/photo/28318745/ ('perf 04', Stéf -b., Pexels, licencia Free)"
+  ],
+  "buffer": {
+    "post_id": "",
+    "scheduled_at": ""
+  }
+}
