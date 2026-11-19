@@ -1,0 +1,48 @@
+{
+  "id": "2026-11-18_nvidia-listado-ig",
+  "network": "instagram",
+  "format": "carousel",
+  "publish_at": "2026-11-19T09:00:00-05:00",
+  "status": "draft",
+  "pillar": "despertar",
+  "campaign": "actualidad",
+  "title": "Grupo The Gentlemen lista a NVIDIA en su portal (sin confirmación de la empresa)",
+  "first_comment": "",
+  "slides": [
+    {
+      "layout": "cover",
+      "headline": "Un grupo de ransomware *listó* a NVIDIA.",
+      "body": "Según Cybernews, The Gentlemen la publicó en su portal de filtraciones con cuenta regresiva de menos de 10 días."
+    },
+    {
+      "layout": "list",
+      "eyebrow": "Lo que aún no se confirma",
+      "title": "Lo que sabemos hoy",
+      "items": [
+        "NVIDIA no ha confirmado que sus sistemas fueron comprometidos.",
+        "El grupo no ha publicado muestras de datos.",
+        "No se menciona un rescate concreto.",
+        "La cuenta regresiva sigue activa: 234 horas al cierre de la nota."
+      ]
+    },
+    {
+      "layout": "closing",
+      "eyebrow": "Assessment de Gobernanza IT",
+      "headline": "Su riesgo también vive en *terceros*.",
+      "body": "Mapeamos qué proveedores tienen acceso a sus sistemas, antes de que su nombre aparezca en un portal.",
+      "cta": "Solicite su assessment"
+    }
+  ],
+  "alt_text": [
+    "Portada: un grupo de ransomware listó a NVIDIA en su portal de filtraciones, según Cybernews.",
+    "Lo que aún no se confirma: NVIDIA no ha confirmado la brecha, no hay muestras publicadas y no se menciona rescate concreto.",
+    "Cierre: su riesgo también vive en terceros. Solicite su assessment de gobernanza IT."
+  ],
+  "sources": [
+    "Cybernews, NVIDIA y The Gentlemen: https://cybernews.com/security/nvidia-the-gentlemen-ransomware-attack/ (listado en portal; NVIDIA no ha confirmado; sin muestras)"
+  ],
+  "buffer": {
+    "post_id": "",
+    "scheduled_at": ""
+  }
+}
