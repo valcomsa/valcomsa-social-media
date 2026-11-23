@@ -1,0 +1,48 @@
+{
+  "id": "2026-11-23_cleverbridge-brecha-ig",
+  "network": "instagram",
+  "format": "carousel",
+  "publish_at": "2026-11-24T09:00:00-05:00",
+  "status": "draft",
+  "pillar": "despertar",
+  "campaign": "actualidad",
+  "title": "Brecha en Cleverbridge: riesgo de terceros en pagos",
+  "first_comment": "",
+  "slides": [
+    {
+      "layout": "cover",
+      "headline": "El hackeo no fue en *su* sistema. Fue en el de su proveedor.",
+      "body": "Cleverbridge, plataforma de pagos para otras empresas, confirmó el robo de números de tarjeta, vencimiento y CVV."
+    },
+    {
+      "layout": "list",
+      "eyebrow": "Lo que confirmó Cleverbridge",
+      "title": "Cuatro datos del caso",
+      "items": [
+        "Detectaron actividad no autorizada el 4 de noviembre.",
+        "Notificaron a los afectados desde el 20 de noviembre.",
+        "No fue ransomware; no hubo sistemas cifrados.",
+        "No ha revelado cuántas tarjetas fueron afectadas."
+      ]
+    },
+    {
+      "layout": "closing",
+      "eyebrow": "Assessment de Gobernanza IT",
+      "headline": "Su proveedor de pagos *es* su riesgo.",
+      "body": "Auditamos qué terceros procesan sus transacciones antes de que una brecha ajena se vuelva su notificación.",
+      "cta": "Solicite su assessment"
+    }
+  ],
+  "alt_text": [
+    "Portada: el hackeo no fue en su sistema, fue en el de su proveedor. Cleverbridge confirmó el robo de datos de tarjetas.",
+    "Cuatro datos del caso: detección el 4 de noviembre, notificaciones desde el 20, no fue ransomware, cifras de afectados sin revelar.",
+    "Cierre: su proveedor de pagos es su riesgo. Solicite su assessment de gobernanza IT."
+  ],
+  "sources": [
+    "Help Net Security, 23 nov 2026: https://www.helpnetsecurity.com/2026/11/23/cleverbridge-data-breach-card-numbers-cvv/"
+  ],
+  "buffer": {
+    "post_id": "",
+    "scheduled_at": ""
+  }
+}
