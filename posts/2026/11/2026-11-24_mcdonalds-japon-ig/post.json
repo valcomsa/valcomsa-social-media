@@ -1,0 +1,48 @@
+{
+  "id": "2026-11-24_mcdonalds-japon-ig",
+  "network": "instagram",
+  "format": "carousel",
+  "publish_at": "2026-11-25T09:00:00-05:00",
+  "status": "draft",
+  "pillar": "despertar",
+  "campaign": "actualidad",
+  "title": "Brecha en McDonald's Japón: ninguna industria queda fuera",
+  "first_comment": "",
+  "slides": [
+    {
+      "layout": "cover",
+      "headline": "\"Solo vendemos comida\" no es una *defensa*.",
+      "body": "McDonald's Japón confirmó el acceso no autorizado a la base de datos de su app el 20 de noviembre de 2026."
+    },
+    {
+      "layout": "list",
+      "eyebrow": "Lo que confirmó la empresa",
+      "title": "Qué se expuso y qué no",
+      "items": [
+        "Historial de compras, IP y ubicación del dispositivo.",
+        "IDs de gestión de cliente, sin vincular a correo o member ID.",
+        "No se expusieron nombres, correos, teléfonos ni tarjetas.",
+        "Invalidaron credenciales y reportaron al regulador japonés."
+      ]
+    },
+    {
+      "layout": "closing",
+      "eyebrow": "Assessment de Gobernanza IT",
+      "headline": "Su industria *no* lo exime.",
+      "body": "Auditamos las bases de datos que sostienen la confianza de sus clientes, sin importar lo que venda.",
+      "cta": "Solicite su assessment"
+    }
+  ],
+  "alt_text": [
+    "Portada: solo vendemos comida no es una defensa. McDonald's Japón confirmó un acceso no autorizado a la base de datos de su app.",
+    "Qué se expuso y qué no: historial de compras, IP y ubicación, sin nombres, correos, teléfonos ni tarjetas.",
+    "Cierre: su industria no lo exime. Solicite su assessment de gobernanza IT."
+  ],
+  "sources": [
+    "BleepingComputer, 24 nov 2026: https://www.bleepingcomputer.com/news/security/mcdonalds-japan-data-breach-exposes-customer-location-information/ (comunicado de la empresa, 20 nov 2026)"
+  ],
+  "buffer": {
+    "post_id": "",
+    "scheduled_at": ""
+  }
+}
