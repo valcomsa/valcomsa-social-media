@@ -1,0 +1,49 @@
+{
+  "id": "2026-11-26_ivanti-zeroday-ig",
+  "network": "instagram",
+  "format": "carousel",
+  "publish_at": "2026-11-27T09:00:00-05:00",
+  "status": "draft",
+  "pillar": "despertar",
+  "campaign": "actualidad",
+  "title": "Falla activa en Ivanti Connect Secure: credenciales robadas sin autenticación",
+  "first_comment": "",
+  "slides": [
+    {
+      "layout": "cover",
+      "headline": "La puerta del teletrabajo quedó *abierta*.",
+      "body": "CISA confirmó la explotación activa de una falla en Ivanti Connect Secure que no requiere autenticación."
+    },
+    {
+      "layout": "list",
+      "eyebrow": "Lo que confirmó la investigación",
+      "title": "Cuatro datos del caso",
+      "items": [
+        "CISA sumó la falla a su catálogo el 13 de octubre de 2026.",
+        "El actor UTA0576 la encadenó con otras fallas para llegar a root.",
+        "Robo de credenciales y exfiltración de datos; sin ransomware confirmado.",
+        "Afecta incluso a dispositivos ya parchados contra otras fallas."
+      ]
+    },
+    {
+      "layout": "closing",
+      "eyebrow": "Assessment de Gobernanza IT",
+      "headline": "Su perímetro *no* es su frontera.",
+      "body": "Auditamos sus accesos remotos y la segmentación interna antes de que una falla de borde se vuelva una brecha completa.",
+      "cta": "Solicite su assessment"
+    }
+  ],
+  "alt_text": [
+    "Portada: la puerta del teletrabajo quedó abierta. CISA confirmó explotación activa de una falla en Ivanti Connect Secure.",
+    "Cuatro datos del caso: catálogo CISA desde el 13 de octubre, actor UTA0576, robo de credenciales sin ransomware confirmado, afecta dispositivos parchados.",
+    "Cierre: su perímetro no es su frontera. Solicite su assessment de gobernanza IT."
+  ],
+  "sources": [
+    "Cybersecurity News: https://cybersecuritynews.com/cisa-urges-patch-ivanti-0-day/ (CVE-2026-104935; CISA KEV 13 oct 2026; actor UTA0576, Volexity)",
+    "BleepingComputer: https://www.bleepingcomputer.com/news/security/ivanti-warns-of-connect-secure-zero-day-exploited-in-attacks/ (detección desde oct 2026; sin CVSS confirmado en fuente)"
+  ],
+  "buffer": {
+    "post_id": "",
+    "scheduled_at": ""
+  }
+}
