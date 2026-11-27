@@ -1,0 +1,63 @@
+{
+  "id": "2026-11-27_todoist-brecha-ig",
+  "network": "instagram",
+  "format": "carousel",
+  "publish_at": "2026-11-28T09:00:00-05:00",
+  "status": "draft",
+  "pillar": "despertar",
+  "campaign": "actualidad",
+  "title": "Brecha en Todoist: una credencial robada, no un ataque al perímetro",
+  "first_comment": "",
+  "slides": [
+    {
+      "layout": "cover",
+      "headline": "El atacante no *entró*. Inició sesión.",
+      "body": "Todoist confirmó una brecha originada el 23 de noviembre de 2026, con una credencial de empleado robada.",
+      "image": {
+        "file": "images/pexels-33433724.jpg",
+        "mode": "full",
+        "position": "50% 50%",
+        "brief": "Pantalla con código y setup futurista (Pexels).",
+        "rights": "Pexels, https://www.pexels.com/photo/33433724/, título 'Futuristic Workspace with Coding on Monitor', fotógrafo Jakub Zerdzicki, licencia Pexels (Free)"
+      }
+    },
+    {
+      "layout": "list",
+      "eyebrow": "Lo que confirmó la empresa",
+      "title": "Cómo ocurrió",
+      "items": [
+        "Robaron una credencial del sistema de control de versiones.",
+        "La usaron para tomar la cuenta de trabajo de un empleado.",
+        "Con esa cuenta, alteraron permisos de acceso interno.",
+        "El 6% de los usuarios de Todoist fue afectado."
+      ],
+      "image": {
+        "file": "images/pexels-33433724.jpg",
+        "mode": "full",
+        "position": "50% 50%",
+        "brief": "Pantalla con código y setup futurista (Pexels).",
+        "rights": "Pexels, https://www.pexels.com/photo/33433724/, título 'Futuristic Workspace with Coding on Monitor', fotógrafo Jakub Zerdzicki, licencia Pexels (Free)"
+      }
+    },
+    {
+      "layout": "closing",
+      "eyebrow": "Assessment de Gobernanza IT",
+      "headline": "Su firewall *no* detiene un login válido.",
+      "body": "Auditamos la gestión de identidad y privilegios antes de que una sola credencial comprometida abra toda su nube.",
+      "cta": "Solicite su assessment"
+    }
+  ],
+  "alt_text": [
+    "Portada: el atacante no entró, inició sesión. Todoist confirmó una brecha originada el 23 de noviembre con una credencial de empleado robada.",
+    "Cómo ocurrió: credencial de control de versiones robada, toma de cuenta de empleado, alteración de permisos internos, 6% de usuarios afectados.",
+    "Cierre: su firewall no detiene un login válido. Solicite su assessment de gobernanza IT."
+  ],
+  "sources": [
+    "The Hacker News, 26 nov 2026: https://thehackernews.com/2026/11/threatsday-250-rogue-extensions-10m.html (Todoist, brecha del 23 nov 2026, declaración de la empresa)",
+    "Foto: https://www.pexels.com/photo/33433724/ (Jakub Zerdzicki, Pexels, Free)"
+  ],
+  "buffer": {
+    "post_id": "",
+    "scheduled_at": ""
+  }
+}
