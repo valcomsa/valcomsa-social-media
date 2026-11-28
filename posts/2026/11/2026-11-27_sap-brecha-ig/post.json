@@ -1,0 +1,64 @@
+{
+  "id": "2026-11-27_sap-brecha-ig",
+  "network": "instagram",
+  "format": "carousel",
+  "publish_at": "2026-11-28T09:00:00-05:00",
+  "status": "draft",
+  "pillar": "despertar",
+  "campaign": "actualidad",
+  "title": "SAP confirma incidente en su entorno de desarrollo",
+  "first_comment": "",
+  "slides": [
+    {
+      "layout": "cover",
+      "headline": "Si le pasa al que *hace* el software...",
+      "body": "SAP confirmó que investiga un incidente de ciberseguridad en su entorno de desarrollo, tras una filtración de Der Spiegel.",
+      "image": {
+        "file": "images/pexels-30215686.jpg",
+        "mode": "full",
+        "position": "50% 30%",
+        "brief": "Persona trabajando de noche en laptop (Pexels).",
+        "rights": "Pexels, https://www.pexels.com/photo/30215686/, título 'Woman Working Late on Laptop in Dark Office', fotógrafo Oktay Köseoğlu, licencia Pexels (Free)"
+      }
+    },
+    {
+      "layout": "list",
+      "eyebrow": "Lo confirmado y lo reportado",
+      "title": "Qué se sabe hoy",
+      "items": [
+        "SAP confirma el incidente; no ha detallado cómo ocurrió.",
+        "Der Spiegel reporta GitHub y tokens de empleados robados.",
+        "SAP: 'no evidencia de acceso a datos de clientes'.",
+        "La investigación forense sigue abierta."
+      ],
+      "image": {
+        "file": "images/pexels-30215686.jpg",
+        "mode": "full",
+        "position": "50% 30%",
+        "brief": "Persona trabajando de noche en laptop (Pexels).",
+        "rights": "Pexels, https://www.pexels.com/photo/30215686/, título 'Woman Working Late on Laptop in Dark Office', fotógrafo Oktay Köseoğlu, licencia Pexels (Free)"
+      }
+    },
+    {
+      "layout": "closing",
+      "eyebrow": "Assessment de Gobernanza IT",
+      "headline": "Su cadena de software *es* su riesgo.",
+      "body": "Auditamos la gestión de identidad y accesos de desarrollo antes de que un token comprometido llegue a su código en producción.",
+      "cta": "Solicite su assessment"
+    }
+  ],
+  "alt_text": [
+    "Portada: si le pasa al que hace el software. SAP confirmó que investiga un incidente de ciberseguridad en su entorno de desarrollo.",
+    "Qué se sabe hoy: SAP confirma el incidente, Der Spiegel reporta GitHub y tokens robados, SAP dice no hay evidencia de acceso a datos de clientes, investigación abierta.",
+    "Cierre: su cadena de software es su riesgo. Solicite su assessment de gobernanza IT."
+  ],
+  "sources": [
+    "SecurityWeek, 27 nov 2026: https://www.securityweek.com/sap-confirms-cyberattack-source-code-reportedly-compromised/",
+    "The Record, 27 nov 2026: https://therecord.media/sap-germany-cyberattack-github (detalles de GitHub y tokens: reportados por Der Spiegel, no confirmados por SAP)",
+    "Foto: https://www.pexels.com/photo/30215686/ (Oktay Köseoğlu, Pexels, Free)"
+  ],
+  "buffer": {
+    "post_id": "",
+    "scheduled_at": ""
+  }
+}
